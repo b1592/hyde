@@ -264,7 +264,7 @@ a:focus {
     padding: 40px;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   /* Fix the masthead to the side for impact and awesomeness */
   .masthead {
     position: fixed;
