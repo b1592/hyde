@@ -5,8 +5,23 @@ title: Les 3
 
 #Les 3: Cipher
 
-<<<<<<< HEAD
-## Arrays
+Al duizenden jaren proberen mensen elkaar berichten te versturen die niet door anderen mogen worden gelezen. Deze versleutelen ze op een manier die zo moeilijk mogelijk te kraken is. Een van de oudste manieren zou door Julius Caesar zelf zijn gebruikt en is redelijk eenvoudig. Hij schoof elke letter in een bericht een vast aantal plaatsen door in het alfabet. Dus hij maakte bijvoorbeeld van een 'a' een 'd', van een 'b' een 'e' etc. Met deze methode gaan we in deze opdracht aan de slag.
+
+* This will become a table of contents (this text will be scraped).
+{:toc}
+
+##Bestanden
+
+In deze map vind je de volgende bestanden:
+
+    readme.html - deze beschrijving
+    cipher.rb - het script waar je in gaat werken
+    encrypted_message.txt - het versleutelde bestand met shift 12
+    encrypted_brute_force.txt - voor de laatste opdracht
+
+## Informatie
+
+### Arrays
 Een `Array` is een geordende collectie.
 
 {% highlight ruby %}
@@ -33,7 +48,7 @@ naam = "Jan"
 naam[0]     # => "J"
 {% endhighlight %}
 
-## For Loops
+### For Loops
 Als je een opdracht een vast aantal keer uit moet voeren, gebruik je een for loop. Stel dat je elk element uit een array wilt aanspreken:
 
 {% highlight ruby %}
@@ -60,7 +75,7 @@ end
 
 Wat is het verschil tussen `(0..10)` en `(0...10)`?
 
-## Hashes
+### Hashes
 Een `Hash` lijkt erg op een array, maar je spreekt een waarde uit de collectie niet met een index, maar met een _key_. Een key kan van elk datatype zijn. De volgende hash verbindt landen met hun hoofdsteden:
 
 {% highlight ruby %}
@@ -75,7 +90,7 @@ hoofdsteden["Nederland"]    # => "Amsterdam"
 
 `"Nederland"` en `"Amsterdam"` worden samen een _key, value pair_ genoemd.
 
-## File Input/Output
+### File Input/Output
 Stel dat je `bericht.txt` wilt inlezen. Dat gaat als volgt:
 
 {% highlight ruby %}
@@ -92,7 +107,7 @@ file.write("hallo!")
 file.close
 {% endhighlight %}
 
-## Ruby Documentation
+### Ruby Documentation
 Nu jullie een aantal basisbegrippen hebben leren kennen, wordt het belangrijk dat jullie de documentatie van de ruby-taal leren lezen. Ook wij zoeken nog dagelijks dingen op.
 
 * [http://www.ruby-doc.org/core-1.9.3/String.html](http://www.ruby-doc.org/core-1.9.3/String.html)
@@ -105,11 +120,6 @@ De volgende functies kunnen van pas komen:
 * `array.join` 
 
 Gebruik de bovenstaande documentatie (of gebruik google) om uit te vinden hoe je ze gebruikt.
-=======
-Al duizenden jaren proberen mensen elkaar berichten te versturen die niet door anderen mogen worden gelezen. Deze versleutelen ze op een manier die zo moeilijk mogelijk te kraken is. Een van de oudste manieren zou door Julius Caesar zelf zijn gebruikt en is redelijk eenvoudig. Hij schoof elke letter in een bericht een vast aantal plaatsen door in het alfabet. Dus hij maakte bijvoorbeeld van een 'a' een 'd', van een 'b' een 'e' etc. Met deze methode gaan we in deze opdracht aan de slag.
-
-* This will become a table of contents (this text will be scraped).
-{:toc}
 
 ##De opdracht
 
@@ -130,17 +140,16 @@ Je ziet hier dus dat bijvoorbeeld de "a" drie plaatsen is opgeschoven en in het 
 
 Dit is de functie waar het allemaal om draait. Als je deze functie een bericht en een bepaalde shift geeft, zou het de build_hash functie moeten aanroepen en dan vervolgens het bericht letter *voor* letter (denk hierbij aan een `for`loop) moeten coderen tot een rij tekst waar je niks zinnigs meer in ziet.
 
-##De functie `decrypt`
+###De functie `decrypt`
 
 Als je iets codeert, wil je het natuurlijk ook weer terug kunnen vertalen. Hiervoor heb je deze functie nodig. We gaan er hier van uit dat je de 'sleutel' (dus de shift) weet. Denk goed na, je hoeft hiervoor niet veel nieuwe code te schrijven!
 
-## (Extra) Leestekens
+### (Extra) Leestekens
 
 Je programma kan nu allerlei stukken tekst, zo lang als je maar wilt, versleutelen en weer decoderen. Maar je zult merken dat het niet meer werkt wanneer er andere tekens, zoals `; , . ! ?` in voor komen. Probeer een manier te bedenken om dit probleem te omzeilen en schrijf in `cipher.rb` een extra test om dit te testen.
 
-## (Extra) Kraken zonder shift
+### (Extra) Kraken zonder shift
 
 Natuurlijk willen mensen de gecodeerde berichten proberen te ontcijferen. Dit is al snel erg lastig, maar ook hier kan een computer heel sterk zijn. Je kunt natuurlijk proberen de shift te achterhalen, maar als dit niet lukt zit er niks anders op dan gewoon alle mogelijkheden langs gaan. Dit wordt 'Brute Force' genoemd. Omdat een computer in staat is om heel snel achter elkaar mogelijkheden te testen, is dit een optie.
 
 Probeer nu het andere bestand, waarvan je de shift niet weet, te kraken met behulp van brute force. Maak hierbij gebruik van de woordenlijst die ook in de map staat. Hoeveel mogelijkheden voor shift zijn er? En als je een shift probeert en daarmee het versleutelde bestand probeert te ontcijferen, waar zoek je dan naar? Met andere woorden, hoe weet de computer dat hij het goed ontcijferd heeft (en dus de juiste shift heeft gevonden)? Veel succes!
->>>>>>> 8b0ac85c14ed402ce8373b61b35437ebddb117cb
