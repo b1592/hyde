@@ -87,6 +87,7 @@ Neem bijvoorbeeld:
 
 if naam == "Jan"
     puts "De naam is Jan!"
+end
 
 {% endhighlight %}
 
@@ -98,6 +99,7 @@ if naam == "Jan"
     puts "De naam is Jan!"
 else
     puts "De naam is niet Jan!"
+end
 
 {% endhighlight %}
 
@@ -111,6 +113,7 @@ elsif naam == "Piet"
     puts "De naam is Piet!"
 else
     puts "De naam is niet Jan!"
+end
 
 {% endhighlight %}
 
