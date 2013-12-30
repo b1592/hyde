@@ -10,6 +10,17 @@ In deze les gaan we bepalen of een getal priem is of niet. Een getal is priem al
 
 Jullie gaan een _algoritme_ schrijven. Dat is een set instructies die tot een duidelijke conclusie leiden: is het gegeven getal een priemgetal, ja of nee?
 
+* This will become a table of contents (this text will be scraped).
+{:toc}
+
+## Bestanden
+
+    prime.rb - jullie code
+    prime_test.rb
+    les2.html
+
+## Informatie
+
 ### Booleans: waar of niet waar?
 Ruby kent verschillende _datatypen_. `String` kennen jullie al. Gehele getallen zijn van het type `Integer`. Maar we hebben ook nog een ander datatype nodig: `Boolean`. Dit datatype heeft twee mogelijke waarden: `true` of `false`.
 
@@ -102,11 +113,5 @@ prime?(104729)  # => true
 We hebben een programma geschreven dat je functie aan een paar simpele tests onderwerpt. Dit programma voer je uit met:
 
     ruby prime_test.rb
-
-### Bestanden
-
-    prime.rb (jullie code hier)
-    prime_test.rb
-    les2.html
 
 Aan de slag!
