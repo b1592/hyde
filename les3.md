@@ -146,7 +146,7 @@ Als je iets codeert, wil je het natuurlijk ook weer terug kunnen vertalen. Hierv
 
 ### (Extra) Leestekens
 
-Je programma kan nu allerlei stukken tekst, zo lang als je maar wilt, versleutelen en weer decoderen. Maar je zult merken dat het niet meer werkt wanneer er andere tekens, zoals `; , . ! ?` in voor komen. Probeer een manier te bedenken om dit probleem te omzeilen en schrijf in `cipher.rb` een extra test om dit te testen.
+Je programma kan nu allerlei stukken tekst, zo lang als je maar wilt, versleutelen en weer decoderen. Maar je zult merken dat het niet meer werkt wanneer er andere tekens, zoals `; , . ! ?` in voor komen. Probeer een manier te bedenken om dit probleem te omzeilen en schrijf in `cipher_test.rb` een extra test om dit te testen.
 
 ### (Extra) Kraken zonder shift
 
