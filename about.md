@@ -4,7 +4,7 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included in Hyde as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  Cursus programmeren.
 </p>
 
 [Hyde](http://mdo.github.io/hyde) is a [Jekyll](http://jekyllrb.com) theme, designed and built by [@mdo](https://twitter.com/mdo). It's an elegant, open source, and mobile first theme for quickly getting a static site up and running.
