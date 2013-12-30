@@ -3,7 +3,7 @@ layout: default
 title: Les 1
 ---
 
-#Les 1 : Hallo
+#Les 1: Hallo
 
 In de eerste les maken we kennis met Ruby en het gebruik van Sublime Text. We praten tegen de computer en laten de computer terugpraten.
 

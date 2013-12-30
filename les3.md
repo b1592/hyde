@@ -144,6 +144,10 @@ Dit is de functie waar het allemaal om draait. Als je deze functie een bericht e
 
 Als je iets codeert, wil je het natuurlijk ook weer terug kunnen vertalen. Hiervoor heb je deze functie nodig. We gaan er hier van uit dat je de 'sleutel' (dus de shift) weet. Denk goed na, je hoeft hiervoor niet veel nieuwe code te schrijven!
 
+##Het bestand ontcijferen
+
+Je hebt nu alles gemaakt om het bestand `encrypted_message.txt` te gaan ontcijferen. Lees het bestand in, draai het in zijn geheel door de `decrypt` functie en sla het ontcijferde stuk tekst op in `decrypted_message.txt`.
+
 ### (Extra) Leestekens
 
 Je programma kan nu allerlei stukken tekst, zo lang als je maar wilt, versleutelen en weer decoderen. Maar je zult merken dat het niet meer werkt wanneer er andere tekens, zoals `; , . ! ?` in voor komen. Probeer een manier te bedenken om dit probleem te omzeilen en schrijf in `cipher_test.rb` een extra test om dit te testen.
@@ -152,4 +156,4 @@ Je programma kan nu allerlei stukken tekst, zo lang als je maar wilt, versleutel
 
 Natuurlijk willen mensen de gecodeerde berichten proberen te ontcijferen. Dit is al snel erg lastig, maar ook hier kan een computer heel sterk zijn. Je kunt natuurlijk proberen de shift te achterhalen, maar als dit niet lukt zit er niks anders op dan gewoon alle mogelijkheden langs gaan. Dit wordt 'Brute Force' genoemd. Omdat een computer in staat is om heel snel achter elkaar mogelijkheden te testen, is dit een optie.
 
-Probeer nu het andere bestand, waarvan je de shift niet weet, te kraken met behulp van brute force. Maak hierbij gebruik van de woordenlijst die ook in de map staat. Hoeveel mogelijkheden voor shift zijn er? En als je een shift probeert en daarmee het versleutelde bestand probeert te ontcijferen, waar zoek je dan naar? Met andere woorden, hoe weet de computer dat hij het goed ontcijferd heeft (en dus de juiste shift heeft gevonden)? Veel succes!
+Probeer nu bestand `encrypted_brute_force.txt`, waarvan je de shift niet weet, te kraken met behulp van brute force. Maak hierbij gebruik van de woordenlijst die ook in de map staat. Hoeveel mogelijkheden voor shift zijn er? En als je een shift probeert en daarmee het versleutelde bestand probeert te ontcijferen, waar zoek je dan naar? Met andere woorden, hoe weet de computer dat hij het goed ontcijferd heeft (en dus de juiste shift heeft gevonden)? Veel succes!
