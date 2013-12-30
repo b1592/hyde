@@ -22,7 +22,7 @@ Net zoals in de rest van de cursus vind je in de map van deze opdracht een aanta
 ###Command line
 
 Als je een Rubyprogramma draait zit je in de commandline. Dit is een zwart scherm in Windows (ook in Mac/Linux) waarin je commando's kunt typen. Je start dit op door op Start te klikken en dan `cmd` te typen.  
-Nu moeten we naar de map met alle bestanden van de cursus, die je eerder hebt gedownload. Op de regel waarop je kunt typen staat links voor de `>` de map waarin je nu zit. Je kunt nu naar een andere map met het commando `cd`.
+Nu moeten we naar de map met alle bestanden van de cursus, die je eerder hebt gedownload. Op de regel waarop je kunt typen staat links voor de `>` de map waarin je nu zit. Je kunt nu naar een andere map met het commando `cd`, wat staat voor "change directory".
 
 Als in je scherm bijvoorbeeld staat:
 
