@@ -235,8 +235,8 @@ a:focus {
 /* Masthead content */
 .masthead h1 {
   margin-top: 0;
-  font-family: Helvetica;
-  font-weight: 600;
+  font-family: "Open Sans";
+  font-weight: bold;
 }
 .masthead .lead {
   margin-bottom: 0;
