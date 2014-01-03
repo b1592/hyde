@@ -51,7 +51,7 @@ Een belangrijke operator voor deze opdracht is `%`, de modulo-operator. Deze gee
 {% endhighlight %} 
 
 ### While-loop
-Een if-statement is een eenmalige beslissing. Maar soms wil je met een opdracht doorgaan zolang als (_while_) een bepaalde uitspraak waar is. Haal een ei uit de doos, zolang er nog eieren zijn. Wat komt hier uit?
+Een if-statement is een eenmalige beslissing. Maar soms wil je met een opdracht doorgaan zolang als _(while)_ een bepaalde uitspraak waar is. Haal een ei uit de doos, zolang er nog eieren zijn. Wat komt hier uit?
 
 {% highlight ruby %}
 counter = 0
