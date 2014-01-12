@@ -5,7 +5,11 @@ title: Les 3
 
 #Les 3: Cipher
 
-Al duizenden jaren proberen mensen elkaar berichten te versturen die niet door anderen mogen worden gelezen. Deze versleutelen ze op een manier die zo moeilijk mogelijk te kraken is. Een van de oudste manieren zou door Julius Caesar zelf zijn gebruikt en is redelijk eenvoudig. Hij schoof elke letter in een bericht een vast aantal plaatsen door in het alfabet. Dus hij maakte bijvoorbeeld van een 'a' een 'd', van een 'b' een 'e' etc. Met deze methode gaan we in deze opdracht aan de slag.
+Al duizenden jaren proberen mensen elkaar berichten te versturen die niet door anderen mogen worden gelezen.
+
+Een van de oudste manieren zou door Julius Caesar zelf zijn gebruikt en is redelijk eenvoudig. Hij schoof elke letter in een bericht een vast aantal plaatsen door in het alfabet. Dus hij maakte bijvoorbeeld van een 'a' een 'd', van een 'b' een 'e' etc. Met deze methode gaan we in deze opdracht aan de slag.
+
+Zie ook: [Caesar Cipher op wikipedia](http://en.wikipedia.org/wiki/Caesar_cipher).
 
 * This will become a table of contents (this text will be scraped).
 {:toc}
@@ -116,10 +120,10 @@ Nu jullie een aantal basisbegrippen hebben leren kennen, wordt het belangrijk da
 
 De volgende functies kunnen van pas komen: 
 
-* `string.split`
-* `array.join` 
+* `String#split`
+* `Array#join` 
 
-Gebruik de bovenstaande documentatie (of gebruik google) om uit te vinden hoe je ze gebruikt.
+`String#split` betekent: de functie `split` die hoort bij `String`. Gebruik de bovenstaande documentatie (of gebruik google) om uit te vinden hoe je ze gebruikt.
 
 ##De opdracht
 
