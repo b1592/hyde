@@ -158,6 +158,8 @@ Je programma kan nu allerlei stukken tekst, zo lang als je maar wilt, versleutel
 
 ### (Extra) Kraken zonder shift
 
-Natuurlijk willen mensen de gecodeerde berichten proberen te ontcijferen. Dit is al snel erg lastig, maar ook hier kan een computer heel sterk zijn. Je kunt natuurlijk proberen de shift te achterhalen, maar als dit niet lukt zit er niks anders op dan gewoon alle mogelijkheden langs gaan. Dit wordt 'Brute Force' genoemd. Omdat een computer in staat is om heel snel achter elkaar mogelijkheden te testen, is dit een optie.
+Nu gaan jullie een bericht ontcijferen! Hoe zou je dit doen?
 
-Probeer nu bestand `encrypted_brute_force.txt`, waarvan je de shift niet weet, te kraken met behulp van brute force. Maak hierbij gebruik van de woordenlijst die ook in de map staat. Hoeveel mogelijkheden voor shift zijn er? En als je een shift probeert en daarmee het versleutelde bestand probeert te ontcijferen, waar zoek je dan naar? Met andere woorden, hoe weet de computer dat hij het goed ontcijferd heeft (en dus de juiste shift heeft gevonden)? Veel succes!
+Je kunt alle mogelijkheden langsgaan. Deze methode heet Brute Force. Of is er een slimmere manier?
+
+Probeer nu bestand `encrypted.txt` te kraken. Je mag hierbij gebruik maken van de woordenlijst die in de map staat. Denk goed na. Hoe weet de computer dat hij de juiste shift te pakken heeft? Veel succes!
