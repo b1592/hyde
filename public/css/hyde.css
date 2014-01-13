@@ -181,6 +181,12 @@ img {
   border-radius: 5px;
 }
 
+iframe {
+  width: 350px;
+  height: 300px;
+  padding: 0px;
+}
+
 
 /*
  * Custom type
@@ -272,6 +278,11 @@ a:focus {
   .masthead-inner {
     padding: 40px;
   }
+  iframe {
+    width: 420px;
+    height:315px;
+    padding: 0px;
+  }
 }
 @media (min-width: 1200px) {
   /* Fix the masthead to the side for impact and awesomeness */
@@ -318,6 +329,7 @@ a:focus {
     margin-left: 35%;
     margin-right: 10%;
   }
+  
 }
 
 
