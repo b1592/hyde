@@ -112,7 +112,7 @@ file.close
 {% endhighlight %}
 
 ### Ruby Documentation
-Nu jullie een aantal basisbegrippen hebben leren kennen, wordt het belangrijk dat jullie de documentatie van de ruby-taal leren lezen. Ook wij zoeken nog dagelijks dingen op.
+Nu jullie een aantal basisbegrippen hebben leren kennen, moeten jullie de documentatie van de ruby-taal leren lezen. Ook wij zoeken nog dagelijks dingen op.
 
 * [http://www.ruby-doc.org/core-1.9.3/String.html](http://www.ruby-doc.org/core-1.9.3/String.html)
 * [http://www.ruby-doc.org/core-1.9.3/Array.html](http://www.ruby-doc.org/core-1.9.3/Array.html)
@@ -130,15 +130,15 @@ De volgende functies kunnen van pas komen:
 ###De functie `build_hash`
 
 In deze opdracht ga je computer inzetten om berichten snel te versleutelen en weer te ontcijferen. Hiervoor zul je een aantal functies moeten schrijven. Begin bij een functie `build_hash`, die met een gegeven 'shift' (het aantal plaatsen dat elke letter moet worden verschoven) een hash aanmaakt.  
-In deze hash moet elke letter in het alfabet gekoppeld worden aan de letter waar hij door vervangen moet gaan worden. Dus een shift van 3 zou zoiets moeten opleveren:
+In deze hash moet elke letter in het alfabet gekoppeld worden aan de letter waar hij door vervangen moet worden. We vatten de spatie `" "` op als 27e letter. Een shift van 3 zou moeten opleveren:
 
 {% highlight ruby %}
 
-{"a"=>"d", "b"=>"e", "c"=>"f", "d"=>"g", "e"=>"h", "f"=>"i", "g"=>"j", "h"=>"k", "i"=>"l", "j"=>"m", "k"=>"n", "l"=>"o", "m"=>"p", "n"=>"q", "o"=>"r", "p"=>"s", "q"=>"t", "r"=>"u", "s"=>"v", "t"=>"w", "u"=>"x", "v"=>"y", "w"=>"z", "x"=>"a", "y"=>"b", "z"=>"c"}
+{"a"=>"d", "b"=>"e", "c"=>"f", "d"=>"g", "e"=>"h", "f"=>"i", "g"=>"j", "h"=>"k", "i"=>"l", "j"=>"m", "k"=>"n", "l"=>"o", "m"=>"p", "n"=>"q", "o"=>"r", "p"=>"s", "q"=>"t", "r"=>"u", "s"=>"v", "t"=>"w", "u"=>"x", "v"=>"y", "w"=>"z", "x"=>" ", "y"=>"a", "z"=>"b", " " => "c"}
 
 {% endhighlight %}
 
-Je ziet hier dus dat bijvoorbeeld de "a" drie plaatsen is opgeschoven en in het gecodeerde bericht een "d" wordt.
+Je ziet hier dat de "a" drie plaatsen is opgeschoven en in het gecodeerde bericht een "d" wordt. 
 
 ###De functie `encrypt`
 
