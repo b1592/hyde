@@ -242,11 +242,20 @@ a:focus {
   margin-bottom: 0;
 }
 .masthead a {
-  color: #fff;
+  color: #f9f9f9;
+  font-weight: normal;
+  font-family: Menlo, Monaco, "Courier New", monospace;
+
+}
+
+#logo {
+  width: 280px;
+  margin-left: -19px;
 }
 
 /* Footer area of masthead */
 .colophon {
+  font-family: Menlo, Monaco, "Courier New", monospace;
   margin-top: 20px;
   color: rgba(255,255,255,.5);
 }
