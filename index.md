@@ -1,7 +1,9 @@
 ---
-layout: post
-title: Cursus programmeren op het Felisenum
+layout: default
+title: 
 ---
+
+#Cursus Programmeren
 
 Programmeren is praten tegen een computer --- een programma schrijven.
 
