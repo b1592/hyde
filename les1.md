@@ -40,11 +40,11 @@ Probeer nu eens het commando `ruby hallo.rb`. Als het goed is zie je nu
 
     Hallo!
 
-in beeld. Je laat de computer het script `hallo.rb` uitvoeren. Dit is het script waar we in gaan werken. Telkens als je je script wilt uitvoeren moet je het commando `ruby <scriptnaam>` intypen. Dit kun je makkelijk herhalen door op het pijltje omhoog op je toetsenbord te drukken. Je kunt gewoon je commandline open laten staan en steeds als je wat hebt veranderd in je script teruggaan en het laten uitvoeren.
+in beeld. Je laat de computer het script `hallo.rb` uitvoeren. Dit is het script waar we in gaan werken. Telkens als je je script wilt uitvoeren moet je het commando `ruby <scriptnaam>` intypen. Met pijltje-omhoog en pijltje-omlaag kun je terugzien die je eerder hebt ingetypt. Laat je commandline open staan, dan kun je script steeds uitvoeren als je wat hebt veranderd.
 
 ###Het commando `puts`
 
-Laten we beginnen met Ruby zelf. Open de map Programmeren in Sublime Text (`File -> Open Folder...`). Links zie je allerlei mappen (Les1, Les2 etc.) staan. Open nu het bestand `hallo.rb` in de map "Les1". Als alles goed gaat zie je nu
+Naar het script zelf! Open de map Programmeren in Sublime Text. (`File -> Open Folder...`). Links zie je allerlei mappen (Les1, Les2, etc.) staan. Open nu het bestand `hallo.rb` in de map "Les1". Daar staat:
 
 {% highlight ruby %}
 
@@ -52,7 +52,7 @@ puts "Hallo"
 
 {% endhighlight %}
 
-Dit is het scriptje dat je eerder in de commandline in actie zag. Het commando `puts` zorgt dat wat je erachter zet op het scherm verschijnt. Zo laat je de computer iets tegen jou zeggen. Maar hoe praat je nou terug? Daar is `gets` voor:
+Dit scriptje zag je eerder in de commandline in actie. Het commando `puts` zorgt zet wat er achter staat op het scherm. Zo laat je de computer iets tegen je zeggen. Maar hoe praat je nou terug? Daar is `gets` voor:
 
 {% highlight ruby %}
 
@@ -78,7 +78,7 @@ puts geluksgetal
 
 en dan geeft Ruby `1` als output.
 
-Maar terug naar `gets`. Dit is een commando dat de gebruiker om *input* vraagt: je kunt dus iets intypen. Wat er gebeurt bij `naam = gets` is dat de computer wat je invoert opslaat als `naam`.
+Maar terug naar `gets`. Dit is een commando dat de gebruiker om *input* vraagt: je kunt iets intypen. Wat er gebeurt bij `naam = gets` is dat de computer wat je invoert opslaat als `naam`.
 
 ###Het `if`-statement
 
