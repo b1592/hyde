@@ -65,7 +65,7 @@ end
 # => "Hallo, Piet!"
 {% endhighlight %}
 
-Je kunt ook over een bepaalde _range_ itereren. Experimenteer met de volgende loops in `irb`.
+Je kunt ook over een _range_ itereren. Experimenteer met de volgende loops in `irb`.
 
 {% highlight ruby %}
 for number in (0..100) do
@@ -80,7 +80,7 @@ end
 Wat is het verschil tussen `(0..10)` en `(0...10)`?
 
 ### Hashes
-Een `Hash` lijkt erg op een array, maar je spreekt een waarde uit de collectie niet met een index, maar met een _key_. Een key kan van elk datatype zijn. De volgende hash verbindt landen met hun hoofdsteden:
+Een `Hash` lijkt op een array, maar je spreekt een waarde uit de collectie niet aan met een index, maar met een _key_. Een key kan van elk datatype zijn. De volgende hash verbindt landen met hun hoofdsteden:
 
 {% highlight ruby %}
 hoofdsteden = {
