@@ -123,7 +123,7 @@ De volgende functies kunnen van pas komen:
 * `String#split`
 * `Array#join` 
 
-`String#split` betekent: de functie `split` die hoort bij `String`. Gebruik de bovenstaande documentatie (of gebruik google) om uit te vinden hoe je ze gebruikt.
+`String#split` betekent: de functie `split` die hoort bij `String`. Gebruik de bovenstaande documentatie (of gebruik google) om uit te vinden hoe je `split` en `join` gebruikt.
 
 ##De opdracht
 
