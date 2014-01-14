@@ -5,7 +5,7 @@ title: Les 1
 
 #Les 1: Hallo
 
-In de eerste les maken we kennis met Ruby en het gebruik van Sublime Text. We praten tegen de computer en laten de computer terugpraten.
+We maken kennis met Ruby en Sublime Text. We praten tegen de computer en laten de computer terugpraten.
 
 * This will become a table of contents (this text will be scraped).
 {:toc}
@@ -32,7 +32,7 @@ dan kun je als je typt `cd Programmeren` gaan naar:
 
     C:/Programmeren>
 
-Dit is al een soort programmeren: je praat direct met de computer in plaats van je muis te gebruiken. Probeer te gaan naar de map "Programmeren" die je hebt gedownload en dan door naar "Les 1".
+Dit is al een soort programmeren: je praat direct met de computer in plaats van je muis te gebruiken. Probeer te gaan naar de map "Programmeren" die je hebt gedownload en dan naar "Les 1".
 
 Als je een map te ver bent gegaan, kun je een stap terug gaan met `cd ..`. Je kunt ook meerdere stappen tegelijk zetten: `cd map1/map2/../map3/`. Door op tab te drukken kun je commando's aanvullen, waardoor je minder hoeft te typen.
 
@@ -60,7 +60,7 @@ naam = gets
 
 {% endhighlight %}
 
-Wat gebeurt hier? `naam` is een *variabele*. Dat is een soort opslagplaats voor informatie. Als je bijvoorbeelt zegt:
+Wat gebeurt hier? `naam` is een *variabele*. Dat is een soort opslagplaats voor informatie. Als je zegt:
 
 {% highlight ruby %}
 
@@ -68,7 +68,7 @@ geluksgetal = 1
 
 {% endhighlight %}
 
-dan sla je `1` op als `geluksgetal`. Later kun je dan bijvoorbeeld typen:
+dan sla je `1` op als `geluksgetal`. Later kun je typen:
 
 {% highlight ruby %}
 
@@ -78,11 +78,11 @@ puts geluksgetal
 
 en dan geeft Ruby `1` als output.
 
-Maar terug naar `gets`. Dit is een commando dat de gebruiker om *input* vraagt: je kunt dan dus iets intypen. Wat er gebeurt bij `naam = gets` is dat de computer wat je invoert opslaat als `naam`.
+Maar terug naar `gets`. Dit is een commando dat de gebruiker om *input* vraagt: je kunt dus iets intypen. Wat er gebeurt bij `naam = gets` is dat de computer wat je invoert opslaat als `naam`.
 
-###Het commando `if`
+###Het `if`-statement
 
-Je wilt niet altijd dat de computer simpelweg een rij commando's achter elkaar uitvoert. Het moet slimmer worden. Hier zijn extra commando's voor nodig, en een van de krachtigste is `if`. Hiermee geef je aan dat de computer alleen iets moet uitvoeren onder een bepaalde voorwaarde en anders niet.
+Een programma is meer dan een rij commando's, die achter elkaar worden uitgevoerd. Een computer kan ook keuzes maken. Hier zijn aparte commando's voor nodig, en één van de krachtigste is `if`. Hiermee geef je aan dat de computer alleen iets moet uitvoeren onder een bepaalde voorwaarde en anders niet.
 
 Neem bijvoorbeeld:
 
@@ -94,9 +94,9 @@ end
 
 {% endhighlight %}
 
-Je kunt vast wel raden wat hier gebeurt: alleen als de variabele `naam` gelijk is aan "Jan", dan zegt de computer iets. Voor het vergelijken van twee waarden gebruik je `==`, een dubbel is-teken. Het enkele is-teken wordt al gebruikt om een waarde aan een variable toe te kennen. Vergeet het `if`-statement niet af te sluiten met `end`.
+Je kunt vast wel raden wat hier gebeurt: alleen als de variabele `naam` gelijk is aan "Jan", dan zegt de computer iets. Voor het vergelijken van twee waarden gebruik je `==`, een dubbel is-teken. Vergeet het `if`-statement niet af te sluiten met `end`.
 
-Maar stel nou dat de naam iets heel anders is, hoe zeg je dan wat de computer moet doen? Hiervoor heb je `else`:
+Maar als de naam geen Jan is, hoe zeg je dan wat de computer moet doen? Hiervoor heb je `else`:
 
 {% highlight ruby %}
 
@@ -108,7 +108,7 @@ end
 
 {% endhighlight %}
 
-En om het nog iets mooier te maken: je kunt ook nog vragen of `naam` misschien iets anders is. Dit doe je met `elsif`:
+En om het nog mooier te maken: je kunt ook nog vragen of `naam` misschien Piet is. Dit doe je met `elsif`:
 
 {% highlight ruby %}
 
@@ -126,11 +126,9 @@ Je kunt er net zoveel `elsif`'s achter zetten als je wilt.
 
 ##De opdracht
 
-Je weet nu alles wat je nodig hebt om zelf aan de slag te gaan met je eerste script. Je eerste script gaat over het communiceren met de computer. Schrijf een programma dat de volgende dingen doet:
+Je weet nu alles wat je nodig hebt om zelf aan de slag te gaan. Je eerste script gaat over het communiceren met de computer. Schrijf een programma dat de volgende dingen doet:
 
 * Begroet de gebruiker
 * Vraagt de naam van de gebruiker
-* Verwerkt de naam in een antwoord en vraagt de gebruiker om `jongen` of `meisje` in te typen
+* Verwerkt de naam in een antwoord en vraagt de gebruiker om `jongen` of `meisje`, of `man` of `vrouw` in te typen.
 * Maakt een persoonlijke begroeting, waarin je de gebruiker aanspreekt met "Meneer" of "Mevrouw" en dan de naam, allemaal bepaald door wat de gebruiker eerder heeft ingetypt
-
-
