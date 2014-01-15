@@ -25,7 +25,7 @@ Jullie gaan een _algoritme_ schrijven. Dat is een set instructies die tot een du
 Ruby kent verschillende _datatypen_. `String` kennen jullie al. Gehele getallen zijn van het type `Integer`. Maar we hebben ook nog een ander datatype nodig: `Boolean`. Dit datatype heeft twee mogelijke waarden: `true` of `false`.
 
 ### Logische uitspraken
-In bijna elk programma moeten er keuzes worden gemaakt: als dít waar is, doe dan dát. Dit soort _logische uitspraking_ leveren `true` of `false` op. Een paar voorbeelden (testen met `irb`!)
+In bijna elk programma moeten er keuzes worden gemaakt: als dít waar is, doe dan dát. Deze _logische uitspraken_ leveren `true` of `false` op. Een paar voorbeelden (testen met `irb`!)
 
 {% highlight ruby %}
 8 > 5   # => true
