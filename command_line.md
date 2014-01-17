@@ -44,3 +44,6 @@ Typ nu: `ruby hallo.rb`. Nu zie je:
     Hallo!
 
 Met `ruby <programma>` vertel je de ruby-interpreter dat hij een programma uit moet voeren.
+
+## irb
+`irb` staat voor interactive Ruby. Typ maar eens `irb` in de command line. Je komt in een omgeving waar je Ruby-code kunt typen, die meteen geïnterpreteerd wordt. Heel handig als je wilt testen hoe bepaalde commando's werken. 
