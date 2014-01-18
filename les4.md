@@ -39,13 +39,33 @@ Als je hier even goed naar kijkt, zie je dat er een grote array is met daarin dr
 
 Probeer zelf eens een paar van dit soort arrays te maken in `irb`, zodat je echt begrijpt hoe ze werken.
 
+###Globale variabelen
+
+Je weet nu al veel van variabelen, maar we gaan er nog iets aan toevoegden. Daarvoor moet je begrijpen hoe ruby de variabelen inperkt. Stel dat je twee functies hebt:
+
+{% highlight ruby %}
+def functieA 
+    functienaam = "A"
+end
+
+def functieB
+    functienaam = "B"
+end
+{% endhighlight %}
+
+Je ziet dat in beide functies variabelen staan met dezelfde naam. Misschien voel je al aan dat hier iets mis kan gaan: twee keer dezelfde variabele gebruiken gaat immers niet goed. Maar ruby beperkt de variabelen tot de functie waar ze in staan, dit noem je *lokale variabelen*.
+
+Maar misschien wil je juist een variabele waar je in elke functie bij kan. Deze noem je *globale variabelen* en in ruby geef je deze aan met een dollarteken: `$variabele`. Overal in je script kun je deze variabelen oproepen en veranderen. Dit kan handig zijn, maar je moet er ook voorzichtig mee zijn. Gebruik dus nooit te veel globale variabelen.
+
 ##De opdracht
 
 Je gaat beginnen met de computer de regels van het spel te leren. Zo moet hij weten wie er aan de beurt is, welke zetten er mogelijk zijn en wanneer het spel klaar is.
 
+###Het bord
+
 Om je op gang te helpen, hebben wij het spelbord voor je gemaakt. Als je het bestand `tictactoe.rb` opent, zie je een paar functies staan, waarvan vooral `drawboard` voor jou van belang is.
 
-Het bord wordt opgeslagen als een `array` met rondjes en kruisjes. Bekijk eens het voorbeeld in het script:
+Het bord wordt opgeslagen als een 2D-array met rondjes en kruisjes. Bekijk eens het voorbeeld in het script:
 
 {% highlight ruby %}
 voorbeeldbord = [[" ", "X", " "], 
@@ -60,4 +80,13 @@ puts drawboard(voorbeeldboard)
 {% endhighlight %}
 
 Kijk maar wat je dan krijgt! Als het goed gaat, zie je nog een bord ernaast met cijfers. Deze cijfers geven de plaats op het bord aan.
+
+###Spelregels
+
+Het bord is nu geregeld. We slaan het bord op in de variabele `$board` (is dit een lokale of globale variabele?).
+
+Nu het spel zelf. Schrijf eerst een functie die kijkt of het spel klaar is.
+
+
+
 
