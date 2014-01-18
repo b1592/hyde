@@ -5,7 +5,7 @@ title: Introductie
 
 # Introductie
 
-Deze website staat niet op zichzelf. De lessen zijn gericht op de leerlingen van het Felisenum die meedoen aan de cursus. In de lessen wordt aan bestanden gerefereerd. De leerlingen krijgen deze bestanden aan het begin van de cursus. In deze bestanden staat wat hulpcode (vooral in de latere lessen). 
+Deze website staat niet op zichzelf. De lessen zijn gericht op de leerlingen van het Felisenum die meedoen aan de cursus. In de lessen wordt aan bestanden en mappen gerefereerd. De leerlingen krijgen deze mappen met bestanden aan het begin van de cursus. In de bestanden staat wat hulpcode (vooral in de latere lessen). 
 
 Les 1 en 2 zijn prima te doen zonder hulpcode.
 
