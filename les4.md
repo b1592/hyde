@@ -5,7 +5,9 @@ title: Les 4
 
 #Les 4: Tictactoe
 
-Wie kent het niet: boter, kaas en eieren? Het werd al rond 100 jaar voor Christus gespeeld door de Romeinen en nu nog steeds. We gaan in deze les het spel aan de computer uitleggen, zodat je het digitaal kunt spelen. En in de extra opdracht kun je zelfs de computer tegen jou laten spelen!
+*nog in ontwikkeling!*
+
+Wie kent het niet: boter, kaas en eieren? Het werd al rond 100 jaar voor Christus gespeeld door de Romeinen en nu nog steeds. We gaan in deze les het spel aan de computer uitleggen, zodat je het digitaal kunt spelen. En in de extra opdracht kun je zelfs de computer tegen jou laten spelen.
 
 In deze les behandelen we:
 
@@ -85,8 +87,13 @@ Kijk maar wat je dan krijgt! Als het goed gaat, zie je nog een bord ernaast met 
 
 Het bord is nu geregeld. We slaan het bord op in de variabele `$board` (is dit een lokale of globale variabele?).
 
-Nu het spel zelf. Schrijf eerst een functie die kijkt of het spel klaar is.
+Nu het spel zelf. Schrijf eens, zonder computer, voor jezelf op wat voor functies je nodig gaat hebben. Je mag zelf weten hoe je je programma gaat opbouwen. Een mogelijkheid is om te beginnen met een functie waar je aan kunt vragen of het spel al voorbij is (3 op een rij of bord vol).
 
+###De speelbeurten
+
+Nu schrijf je een functie die vraagt om een zet (met `gets`) en dan het spelbord bijwerkt. En dit moet natuurlijk afwisselend voor speler 1 en speler 2. Maak hierbij gebruik van de cijfers voor de plekken op het bord zoals in de functie `drawboard`.
+
+Controleer wel of een ingevoerde zet mag en of dan het het spel nog verder gaat of dat het voorbij is. Laat dan de functie stoppen en zeg wie er heeft gewonnen, of dat het gelijkspel is.
 
 
 
