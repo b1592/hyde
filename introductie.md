@@ -17,7 +17,7 @@ Maar dat allemaal later.
 
 ### Alvast beginnen?
 
-[Beginning Ruby](http://www.amazon.com/gp/product/1430223634/) vinden wij een goed boek om te leren programmeren (*From Novice To Professional* hebben we maar even weggelaten uit de titel, aangezien dat toch niet helemaal realistisch is; wellicht meer verkooptruc).
+[Beginning Ruby](http://www.amazon.com/gp/product/1430223634/) vinden wij een goed boek om te leren programmeren _(From Novice To Professional_ hebben we maar even weggelaten uit de titel, aangezien dat toch niet helemaal realistisch is; wellicht meer verkooptruc).
 
 Voor de gevorderde: [Eloquent Ruby](http://www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional-Series/dp/0321584104). Dit is wat ons betreft de bijbel. Maar beter geschikt als derde of vierde boek.
 
