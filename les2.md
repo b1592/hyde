@@ -11,6 +11,7 @@ In deze les gaan we bepalen of een getal priem is of niet. Een getal is priem al
 Jullie gaan een _algoritme_ schrijven. Dat is een set instructies die tot een duidelijke conclusie leiden: is het gegeven getal een priemgetal, ja of nee?
 
 In deze les behandelen we:
+
 * This will become a table of contents (this text will be scraped).
 {:toc}
 
