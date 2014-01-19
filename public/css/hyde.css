@@ -284,14 +284,14 @@ a:focus {
     padding: 0px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   /* Fix the masthead to the side for impact and awesomeness */
   .masthead {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 25%;
+    width: 305px;
     margin-bottom: 0;
   }
   .masthead-inner {
