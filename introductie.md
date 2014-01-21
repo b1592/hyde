@@ -19,6 +19,8 @@ Maar dat allemaal later.
 
 [Beginning Ruby](http://www.amazon.com/gp/product/1430223634/) vinden wij een goed boek om te leren programmeren _(From Novice To Professional_ hebben we maar weggelaten uit de titel, aangezien dat niet helemaal realistisch is: wellicht meer verkooptruc).
 
+[Command Line Crash Course](http://cli.learncodethehardway.org/book/): zeer goede inleiding in de command line. Gratis online te lezen. 
+
 Voor de gevorderde: [Eloquent Ruby](http://www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional-Series/dp/0321584104). Dit is wat ons betreft de bijbel. Maar beter geschikt als derde of vierde boek.
 
 Verder moet je programmeren *heel veel doen*. 
