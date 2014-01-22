@@ -274,6 +274,10 @@ a:focus {
   color: inherit;
 }
 
+.copyright a {
+  color: rgba(255,255,255,.5);
+}
+
 /* Responsive masthead */
 @media (min-width: 768px) {
   .masthead-inner {
