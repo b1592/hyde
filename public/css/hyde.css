@@ -60,6 +60,7 @@ body {
   color: #454441;
   background-color: #fff;
 }
+
 @media (min-width: 990px) {
   body {
     font-size: 18px;
@@ -284,7 +285,7 @@ a:focus {
     padding: 0px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 990px) {
   /* Fix the masthead to the side for impact and awesomeness */
   .masthead {
     position: fixed;
@@ -331,7 +332,6 @@ a:focus {
   }
   
 }
-
 
 /*
  * Posts
