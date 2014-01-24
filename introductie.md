@@ -21,6 +21,8 @@ Maar dat allemaal later.
 
 [Command Line Crash Course](http://cli.learncodethehardway.org/book/): zeer goede inleiding in de command line. Gratis online te lezen. 
 
+[Ruby Warrior](https://www.bloc.io/ruby-warrior/#/) is een verdomd moeilijk spelletje. Je speelt levels uit door je _warrior_ goed te programmeren. Als je het fout doet ga je dood. Komt er iemand voorbij level 4?
+
 Voor de gevorderde: [Eloquent Ruby](http://www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional-Series/dp/0321584104). Dit is wat ons betreft de bijbel. Maar beter geschikt als derde of vierde boek.
 
 Verder moet je programmeren *heel veel doen*. 
