@@ -26,6 +26,93 @@ In deze map vind je de volgende bestanden:
 
 ## Informatie
 
+### Objecten
+
+Om de echte wereld zo begrijpelijk mogelijk te modelleren, kennen veel programmeertalen objecten (`Objects`). Een klasse (`Class`) is de blauwdruk van een object. Dat kan er zo uit zien:
+
+{% highlight ruby %}
+class Book
+    def initialize(author, title, content)
+        @author = author
+        @title = title
+        @content = content
+    end
+end
+{% endhighlight %}
+
+`initialize` is een speciale functie, die wordt uitgevoerd zodra er een object van klasse `Book` wordt aangemaakt. Je maakt een object door `new` aan te roepen.
+
+{% highlight ruby %}
+book1 = Book.new("Lord of the Rings", "J. R. R. Tolkien", "Three Rings for the Elven-kings ...")
+book2 = Book.new("Titaantjes", "Nescio", "Jongens waren we - maar aardige jongens. Al zeg ik 't zelf...")
+{% endhighlight %}
+
+Zoals je ziet heeft elk boek dezelfde structuur. Het is een soort container van de variabelen `author`, `title` en `content`. Variabelen die bij een object horen, zogenaamde _instance variables_, beginnen met een `@`.
+
+Deze variabelen zijn afgeschermd van de code buiten de klasse. Je kunt er van buitenaf niet bij:
+
+{% highlight ruby %}
+book1.title # => NoMethodError: undefined method `title'
+{% endhighlight %}
+
+Als je bepaalde variabelen beschikbaar wilt maken, doe je dat met `attr_accessor`:
+
+{% highlight ruby %}
+class Book
+    attr_accessor :title, :author, :content
+
+    def initialize(author, title, content)
+        @author = author
+        @title = title
+        @content = content
+    end
+end
+{% endhighlight %}
+
+Nu kunnen we aan het boek vragen wat zijn titel is:
+
+{% highlight ruby %}
+book1.title # => "Lord of the Rings"
+book1.author # => "J. R. R. Tolkien"
+{% endhighlight %}
+
+Stel dat we de pagina's willen bijhouden die we hebben gelezen. Bij elk nieuw boek dat we maken, zetten we de variable `@current_page` op 1. Dit gebeurt dus in de initialize. Vervolgens kunnen we de functie `flip_page` aanroepen:
+
+{% highlight ruby %}
+class Book
+    attr_accessor :title, :author, :content, :@current_page
+
+    def initialize(author, title, content)
+        @author = author
+        @title = title
+        @content = content
+        @current_page = 1
+    end
+
+    def flip_page
+        @current_page = @current_page + 1
+    end
+end
+{% endhighlight %} 
+
+We kunnen nu dit doen:
+
+{% highlight ruby %}
+book1.current_page # => 1
+book.flip_page 
+book.current_page # => 2
+{% endhighlight %}
+
+Wat is het voordeel van objecten? Zodra we de blauwdruk eenmaal hebben gespecificeerd, kunnen we precies vragen aan het object wat we nodig hebben. Niets meer en niets minder.
+
+Voor het spel Tic Tac Toe gaan jullie een `TicTacToe`-object maken. Dit object bevat alle spellogica. Uiteindelijk is de bedoeling dat we aan het `TicTacToe` object kunnen vragen wie er aan de beurt is, of het spel al over is, hoe het huidige bord eruit ziet, enzovoort. 
+
+{% highlight ruby %}
+game = TicTacToe.new
+game.over? # => false
+game.current_player # => "Player 1"
+{% endhighlight %}
+
 ###2D-array
 
 Je hebt al kennis gemaakt met arrays. Nu gaan we een stapje verder: tweedimensionale arrays. Dit zijn eigenlijk arrays in arrays. Het spelbord dat je straks zal gebruiken is precies dat:
