@@ -28,7 +28,7 @@ In deze map vind je de volgende bestanden:
 
 ### Objecten
 
-Om de echte wereld zo begrijpelijk mogelijk te modelleren, kennen veel programmeertalen objecten (`Objects`). Een klasse (`Class`) is de blauwdruk van een object. Dat kan er zo uit zien:
+Om de echte wereld zo begrijpelijk mogelijk te vatten in code, gebruiken veel programmeertalen objecten (`Objects`). Ook Ruby. In onderstaand voorbeeld willen we boeken modelleren:
 
 {% highlight ruby %}
 class Book
@@ -40,16 +40,18 @@ class Book
 end
 {% endhighlight %}
 
-`initialize` is een speciale functie, die wordt uitgevoerd zodra er een object van klasse `Book` wordt aangemaakt. Je maakt een object door `new` aan te roepen.
+Een klasse (`Class`) is de blauwdruk van een object.
+
+`initialize` is een speciale functie, die wordt uitgevoerd zodra er een object van klasse `Book` wordt aangemaakt. Je maakt een object door `new` aan te roepen:
 
 {% highlight ruby %}
 book1 = Book.new("Lord of the Rings", "J. R. R. Tolkien", "Three Rings for the Elven-kings ...")
 book2 = Book.new("Titaantjes", "Nescio", "Jongens waren we - maar aardige jongens. Al zeg ik 't zelf...")
 {% endhighlight %}
 
-Zoals je ziet heeft elk boek dezelfde structuur. Het is een soort container van de variabelen `author`, `title` en `content`. Variabelen die bij een object horen, zogenaamde _instance variables_, beginnen met een `@`.
+Elk boek heeft dezelfde structuur, die wordt bepaalde door de klasse `Book`. Het is een container van de variabelen `author`, `title` en `content`. Variabelen die bij een object horen, zogenaamde _instance variables_, beginnen met een `@`.
 
-Deze variabelen zijn afgeschermd van de code buiten de klasse. Je kunt er van buitenaf niet bij:
+Deze variabelen zijn afgeschermd van de code buiten de klasse:
 
 {% highlight ruby %}
 book1.title # => NoMethodError: undefined method `title'
@@ -76,11 +78,22 @@ book1.title # => "Lord of the Rings"
 book1.author # => "J. R. R. Tolkien"
 {% endhighlight %}
 
-Stel dat we de pagina's willen bijhouden die we hebben gelezen. Bij elk nieuw boek dat we maken, zetten we de variable `@current_page` op 1. Dit gebeurt dus in de initialize. Vervolgens kunnen we de functie `flip_page` aanroepen:
+En we kunnen attributen veranderen:
+
+{% highlight ruby %}
+book2.title = "De uitvreter"
+book2.content = "Behalve den man, die de Sarphatistraat ..."
+
+book2.title # => "De uitvreter"
+{% endhighlight %}
+
+So far so good.
+
+Stel dat we willen bijhouden waar we zijn gebleven met lezen. Bij elk nieuw boek dat we maken, zetten we de variable `@current_page` op 1. Dit gebeurt dus in `initialize`. We schrijven een functie `flip_page`:
 
 {% highlight ruby %}
 class Book
-    attr_accessor :title, :author, :content, :@current_page
+    attr_accessor :title, :author, :content, :current_page
 
     def initialize(author, title, content)
         @author = author
@@ -95,7 +108,7 @@ class Book
 end
 {% endhighlight %} 
 
-We kunnen nu dit doen:
+We kunnen nu dit doen (niet vergeten `:current_page` toe te voegen aan `attr_accessor`):
 
 {% highlight ruby %}
 book1.current_page # => 1
@@ -103,14 +116,60 @@ book.flip_page
 book.current_page # => 2
 {% endhighlight %}
 
-Wat is het voordeel van objecten? Zodra we de blauwdruk eenmaal hebben gespecificeerd, kunnen we precies vragen aan het object wat we nodig hebben. Niets meer en niets minder.
+Als we de woorden van een boek nodig hebben, dan definiëren we gewoon een functie `words`!
 
-Voor het spel Tic Tac Toe gaan jullie een `TicTacToe`-object maken. Dit object bevat alle spellogica. Uiteindelijk is de bedoeling dat we aan het `TicTacToe` object kunnen vragen wie er aan de beurt is, of het spel al over is, hoe het huidige bord eruit ziet, enzovoort. 
+{% highlight ruby %}
+class Book
+    attr_accessor :title, :author, :content, :current_page
+
+    def initialize(author, title, content)
+        @author = author
+        @title = title
+        @content = content
+        @current_page = 1
+    end
+
+    def flip_page
+        @current_page = @current_page + 1
+    end
+
+    def words
+        @content.split(" ")
+    end
+end
+{% endhighlight %}
+
+{% highlight ruby %}
+book1.words # => ["Three", "rings", "for", ...
+{% endhighlight %}
+
+Wat is het voordeel van objecten? Zodra we de blauwdruk hebben gespecificeerd, kunnen we precies vragen aan het object wat we nodig hebben. Niets meer en niets minder. Dit geeft overzicht, en maakt software hergebruiken makkelijk.
+
+Nu weten jullie ook wat hier gebeurt:
+
+{% highlight ruby %}
+getallen = [1, 2, 3, 4, 5]
+getallen.max # => 5
+{% endhighlight %}
+
+`getallen` is een object, van de klasse `Array`! `max` is een functie die in deze klasse staat gedefinieerd. Stiekem is alles in Ruby een object:
+
+{% highlight ruby %}
+"Obama".reverse # => "amabO"
+{% endhighlight %}
+
+`"Obama"` is een object van klasse `String`, met een functie `reverse`.
+
+Laat je niet overdonderen. Het kost de meeste mensen minstens een half jaar om aan _objectgeörienteerd_ programmeren gewend te raken.
+
+Voor het spel Tic Tac Toe gaan jullie een `TicTacToe`-object maken. Dit object bevat alle spellogica. Uiteindelijk is de bedoeling dat we aan het `TicTacToe`-object kunnen vragen wie er aan de beurt is, of het spel al over is, hoe het huidige bord eruit ziet, enzovoort. 
 
 {% highlight ruby %}
 game = TicTacToe.new
 game.over? # => false
 game.current_player # => "Player 1"
+game.insert(1)
+game.current_player # => "Player 2"
 {% endhighlight %}
 
 ###2D-array
