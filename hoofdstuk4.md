@@ -190,24 +190,6 @@ Als je hier even goed naar kijkt, zie je dat er een grote array is met daarin dr
 
 Probeer zelf eens een paar van dit soort arrays te maken in `irb`, zodat je echt begrijpt hoe ze werken.
 
-###Globale variabelen
-
-Je weet nu al veel van variabelen, maar we gaan er nog iets aan toevoegden. Daarvoor moet je begrijpen hoe ruby de variabelen inperkt. Stel dat je twee functies hebt:
-
-{% highlight ruby %}
-def functieA 
-    functienaam = "A"
-end
-
-def functieB
-    functienaam = "B"
-end
-{% endhighlight %}
-
-Je ziet dat in beide functies variabelen staan met dezelfde naam. Misschien voel je al aan dat hier iets mis kan gaan: twee keer dezelfde variabele gebruiken gaat immers niet goed. Maar ruby beperkt de variabelen tot de functie waar ze in staan, dit noem je *lokale variabelen*.
-
-Maar misschien wil je juist een variabele waar je in elke functie bij kan. Deze noem je *globale variabelen* en in ruby geef je deze aan met een dollarteken: `$variabele`. Overal in je script kun je deze variabelen oproepen en veranderen. Dit kan handig zijn, maar je moet er ook voorzichtig mee zijn. Gebruik dus nooit te veel globale variabelen.
-
 ##De opdracht
 
 Je gaat beginnen met de computer de regels van het spel te leren. Zo moet hij weten wie er aan de beurt is, welke zetten er mogelijk zijn en wanneer het spel klaar is.

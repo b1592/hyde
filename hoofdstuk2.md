@@ -98,6 +98,65 @@ greet("Chloe")
 
 Als je nu de groet wilt veranderen, hoef je alleen maar de functiedefinitie aan te passen (`def ... end`). Dan worden Anna, Bert en Chloe meteen op de juiste manier begroet.
 
+### Scope van variabelen
+
+{% highlight ruby %}
+def mijn_functie
+    puts "Dit is mijn functie"
+    naam = "Klaas"
+end
+
+puts naam
+# => undefined local variable or method `naam'
+{% endhighlight %}
+
+Waarom is `naam` onbekend? Er staat toch `naam = "Klaas"` in `mijn_functie`?
+
+Het antwoord is dat de variabele `naam` alleen bekend is in de functie `mijn_functie`. Daarbuiten bestaat `naam` niet. Je zegt ook wel: `naam` is bekend in de _scope_   van `mijn_functie`. De scope bepaalt vanaf welke plek een variabele bereikbaar is.
+
+Dus wat gebeurt hier?
+
+{% highlight ruby %}
+naam = "Pieter"
+
+def mijn_functie
+    puts "Dit is mijn functie"
+    naam = "Klaas"
+    puts naam
+end
+
+puts naam
+# => "Pieter"
+mijn_functie
+# => "Dit is mijn functie"
+# => "Klaas"
+puts naam
+# => "Pieter"
+{% endhighlight %}
+
+Buiten de functie staat nu `naam = "Pieter"`. Dus `puts naam` geeft `"Pieter"` terug.
+
+Maar binnen de functie, in de _lokale scope_, staat `naam = "Klaas"`. Dus het commando `puts naam` binnen `mijn_functie` geeft `"Klaas"`.
+
+Wat gebeurt er als we `naam = "Klaas"` weghalen?
+
+{% highlight ruby %}
+naam = "Pieter"
+
+def mijn_functie
+    puts "Dit is mijn functie"
+    puts naam
+end
+
+mijn_functie
+# "Dit is mijn functie"
+# => undefined local variable or method `naam'
+{% endhighlight %}
+
+`naam` is niet bekend! Variabelen die binnen functies worden gedefinieerd zijn onzichtbaar buiten de functie en _vice versa_!
+
+Wees niet bang als je het bovenstaande niet begrijpt. Programmeer vrolijk door, tot je een keer `undefined local variable or method 'naam'` in de command line ziet staan, terwijl je zéker weet dat je `naam` gedefinieerd hebt. Lees dan dit stuk nog eens door. Programmeren ga je snappen door te doen.
+
 ## De opdracht
 Jullie gaan een functie schrijven die `false` teruggeeft als het getal niet priem is, en `true` als het getal wel priem is. Dit is de bedoeling:
 
