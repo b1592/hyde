@@ -112,8 +112,8 @@ We kunnen nu dit doen (niet vergeten `:current_page` toe te voegen aan `attr_acc
 
 {% highlight ruby %}
 book1.current_page # => 1
-book.flip_page 
-book.current_page # => 2
+book1.flip_page 
+book1.current_page # => 2
 {% endhighlight %}
 
 Als we de woorden van een boek nodig hebben, dan definiëren we gewoon een functie `words`!
