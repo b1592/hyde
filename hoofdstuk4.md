@@ -1,5 +1,5 @@
 ---
-    layout: default
+layout: default
 title: Les 4
 ---
 
@@ -200,13 +200,13 @@ Zoals je ziet, kun je `.rb` weglaten uit de bestandsnaam.
 
 ###2D-array
 
-Je hebt al kennis gemaakt met arrays. Nu gaan we een stapje verder: tweedimensionale arrays. Dit zijn eigenlijk arrays in arrays. Het spelbord dat je straks zal gebruiken is precies dat:
+Je hebt al kennis gemaakt met arrays. Nu gaan we een stapje verder: tweedimensionale arrays. Dit zijn arrays in arrays. Het spelbord is precies dat:
 
 {% highlight ruby %}
 [["X", "X", "O"], ["O", "O", "X"], [" ", " ", "O"]]
 {% endhighlight %}
 
-Als je hier even goed naar kijkt, zie je dat er een grote array is met daarin drie kleine arrays. Deze kleine arrays met elk drie elementen vormen de rijen van de tabel. Deze 2D-array ziet er zo uit in tabelvorm:
+Je ziet dat er één grote array is met daarin drie kleine arrays. Deze kleine arrays vormen de rijen van het bord:
 
      X | X | O 
     ---|---|---
@@ -214,7 +214,7 @@ Als je hier even goed naar kijkt, zie je dat er een grote array is met daarin dr
     ---|---|---
        |   | O 
 
-Probeer zelf eens een paar van dit soort arrays te maken in `irb`, zodat je echt begrijpt hoe ze werken.
+Probeer zelf een paar van dit soort arrays te maken in `irb`, zodat je echt begrijpt hoe ze werken.
 
 ##De opdracht
 
@@ -241,9 +241,6 @@ puts drawboard(voorbeeldboard)
 Kijk maar wat je dan krijgt! Als het goed gaat, zie je nog een bord ernaast met cijfers. Deze cijfers geven de plaats op het bord aan.
 
 ###Spelregels
-
-Het bord is nu geregeld. We slaan het bord op in de variabele `$board` (is dit een lokale of globale variabele?).
-
 Nu het spel zelf. Schrijf eens, zonder computer, voor jezelf op wat voor functies je nodig gaat hebben. Je mag zelf weten hoe je je programma gaat opbouwen. Een mogelijkheid is om te beginnen met een functie waar je aan kunt vragen of het spel al voorbij is (3 op een rij of bord vol).
 
 ###De speelbeurten

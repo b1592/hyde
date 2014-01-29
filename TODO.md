@@ -12,5 +12,6 @@
 * beslissen over scaffolding tictactoe
   - class TicTacToe in eigen file
   - in main file alles wat nodig is om bord te tekenen
+  - bord is 2D array
 
 * mastermind
