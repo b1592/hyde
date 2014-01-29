@@ -21,8 +21,9 @@ In deze les behandelen we:
 
 In deze map vind je de volgende bestanden:
 
-    readme.html - deze beschrijving
-    tictactoe.rb - het script waar je in gaat werken
+    readme.html
+    tictactoe.rb
+    game.rb
 
 ## Informatie
 
@@ -49,7 +50,7 @@ book1 = Book.new("Lord of the Rings", "J. R. R. Tolkien", "Three Rings for the E
 book2 = Book.new("Titaantjes", "Nescio", "Jongens waren we - maar aardige jongens. Al zeg ik 't zelf...")
 {% endhighlight %}
 
-Elk boek heeft dezelfde structuur, die wordt bepaalde door de klasse `Book`. Het is een container van de variabelen `author`, `title` en `content`. Variabelen die bij een object horen, zogenaamde _instance variables_, beginnen met een `@`.
+Elk boek heeft dezelfde structuur, die wordt bepaalde door de klasse `Book`. Het is een container van de variabelen `author`, `title` en `content`. Variabelen die bij een object horen --- _instance variables_ --- beginnen met een `@`.
 
 Deze variabelen zijn afgeschermd van de code buiten de klasse:
 
@@ -145,7 +146,7 @@ book1.words # => ["Three", "rings", "for", ...
 
 Wat is het voordeel van objecten? Zodra we de blauwdruk hebben gespecificeerd, kunnen we precies vragen aan het object wat we nodig hebben. Niets meer en niets minder. Dit geeft overzicht, en maakt software hergebruiken makkelijk.
 
-Nu weten jullie ook wat hier gebeurt:
+Nu weten jullie wat hier gebeurt:
 
 {% highlight ruby %}
 getallen = [1, 2, 3, 4, 5]
@@ -162,15 +163,40 @@ getallen.max # => 5
 
 Laat je niet overdonderen. Het kost de meeste mensen minstens een half jaar om aan _objectgeörienteerd_ programmeren gewend te raken.
 
-Voor het spel Tic Tac Toe gaan jullie een `TicTacToe`-object maken. Dit object bevat alle spellogica. Uiteindelijk is de bedoeling dat we aan het `TicTacToe`-object kunnen vragen wie er aan de beurt is, of het spel al over is, hoe het huidige bord eruit ziet, enzovoort. 
+Voor het spel Tic Tac Toe gaan jullie een `Game`-object maken. Dit object bevat alle spellogica. Uiteindelijk is de bedoeling dat we aan het `Game`-object kunnen vragen wie er aan de beurt is, of het spel al over is, hoe het huidige bord eruit ziet, enzovoort. 
 
 {% highlight ruby %}
-game = TicTacToe.new
+game = Game.new
 game.over? # => false
 game.current_player # => "Player 1"
-game.insert(1)
+game.play(1)
 game.current_player # => "Player 2"
 {% endhighlight %}
+
+### `require` en `require_relative`
+Je hoeft het wiel niet opnieuw uit te vinden. Voorbeeld: je wilt random strings genereren. Daar heeft Ruby al iets op bedacht. Je "leent" het bestand `securerandom` uit de _standard library_. Hier staan alle files die standaard bij de Ruby-taal geleverd worden. Dat gaat zo:
+
+{% highlight ruby %}
+require "securerandom"
+
+puts SecureRandom.hex
+# => "eb693ec8252cd630102fd0d0fb7c3485"
+{% endhighlight %}
+
+Nu kun je alle code uit `securerandom` aanroepen, zonder te weten wat er precies in dat bestand staat. In de documentatie lees je wat je er allemaal mee kunt doen.
+
+Grote programma's worden vaak gesplitst in meerdere bestanden. Dit geeft overzicht. Als je code uit je eigen mappen wilt aanroepen, moet je `require_relative` gebruiken.
+
+In de map `Hoofdstuk4` staat `tictactoe.rb`. Dit bestand willen we uitvoeren om het spel te starten. Maar om het overzicht te bewaren, zetten we alle code van de klasse `Game` in `game.rb`. In `tictactoe.rb` roepen we vervolgens `game.rb` aan:
+
+{% highlight ruby %}
+# tictactoe.rb
+require_relative "game"
+
+game = Game.new
+{% endhighlight %}
+
+Zoals je ziet, kun je `.rb` weglaten uit de bestandsnaam.
 
 ###2D-array
 

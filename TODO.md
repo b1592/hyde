@@ -1,8 +1,12 @@
 # TODO
 
-* variable scope naar een andere les
-* Objecten uitleggen
-* require uitleggen
+* DONE variable scope naar een andere les
+* DONE Objecten uitleggen
+* DONE require uitleggen
+* het kopje `Bestanden` overal correct maken
+* scaffolding tictactoe maken
+* 
+
 * filmpje verplaatsen les 4
 
 * beslissen over scaffolding tictactoe
