@@ -5,7 +5,7 @@
 * DONE require uitleggen
 * het kopje `Bestanden` overal correct maken
 * scaffolding tictactoe maken
-* 
+* hulpbestanden H2 (encrypted_message.txt)
 
 * filmpje verplaatsen les 4
 
