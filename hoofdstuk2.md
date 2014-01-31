@@ -1,25 +1,25 @@
 ---
 layout: default
-title: Les 2
+title: Hoofdstuk 2
 ---
 
 # Hoofdstuk 2: priemgetallen
-In deze les gaan we bepalen of een getal priem is of niet. Een getal is priem als het alleen deelbaar is door 1 en door zichzelf. De eerste paar priemgetallen zijn:
+In dit hoofdstuk gaan we bepalen of een getal priem is of niet. Een getal is priem als het alleen deelbaar is door 1 en door zichzelf. De eerste paar priemgetallen zijn:
 
     2, 3, 5, 7, 11, 13, 17, ...
 
 Jullie gaan een _algoritme_ schrijven. Dat is een set instructies die tot een duidelijke conclusie leiden: is het gegeven getal een priemgetal, ja of nee?
 
-In deze les behandelen we:
+In dit hoofdstuk behandelen we:
 
 * This will become a table of contents (this text will be scraped).
 {:toc}
 
 ## Bestanden
 
-    prime.rb - jullie code
-    prime_test.rb
-    les2.html
+    Hoofdstuk2.url - deze beschrijving
+    prime.rb - het script waar je in gaat werken
+    prime_test.rb - de testjes 
 
 ## Informatie
 
