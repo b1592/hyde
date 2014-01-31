@@ -24,6 +24,7 @@ In deze map vind je de volgende bestanden:
     readme.html
     tictactoe.rb
     game.rb
+    narrator.rb
 
 ## Informatie
 
@@ -163,16 +164,6 @@ getallen.max # => 5
 
 Laat je niet overdonderen. Het kost de meeste mensen minstens een half jaar om aan _objectgeörienteerd_ programmeren gewend te raken.
 
-Voor het spel Tic Tac Toe gaan jullie een `Game`-object maken. Dit object bevat alle spellogica. Uiteindelijk is de bedoeling dat we aan het `Game`-object kunnen vragen wie er aan de beurt is, of het spel al over is, hoe het huidige bord eruit ziet, enzovoort. 
-
-{% highlight ruby %}
-game = Game.new
-game.over? # => false
-game.current_player # => "Player 1"
-game.play(1)
-game.current_player # => "Player 2"
-{% endhighlight %}
-
 ### `require` en `require_relative`
 Je hoeft het wiel niet opnieuw uit te vinden. Voorbeeld: je wilt random strings genereren. Daar heeft Ruby al iets op bedacht. Je "leent" het bestand `securerandom` uit de _standard library_. Hier staan alle files die standaard bij de Ruby-taal geleverd worden. Dat gaat zo:
 
@@ -187,13 +178,14 @@ Nu kun je alle code uit `securerandom` aanroepen, zonder te weten wat er precies
 
 Grote programma's worden vaak gesplitst in meerdere bestanden. Dit geeft overzicht. Als je code uit je eigen mappen wilt aanroepen, moet je `require_relative` gebruiken.
 
-In de map `Hoofdstuk4` staat `tictactoe.rb`. Dit bestand willen we uitvoeren om het spel te starten. Maar om het overzicht te bewaren, zetten we alle code van de klasse `Game` in `game.rb`. In `tictactoe.rb` roepen we vervolgens `game.rb` aan:
+In de map `Hoofdstuk4` staat `tictactoe.rb`. Dit bestand willen we uitvoeren om het spel te starten. Maar om het overzicht te bewaren, zetten we alle code van de klasse `Game` in `game.rb` en van klasse `Narrator` in `narrator.rb`. In `tictactoe.rb` zetten we vervolgens:
 
 {% highlight ruby %}
-# tictactoe.rb
 require_relative "game"
+require_relative "narrator"
 
 game = Game.new
+narrator = Narrator.new
 {% endhighlight %}
 
 Zoals je ziet, kun je `.rb` weglaten uit de bestandsnaam.
@@ -216,38 +208,47 @@ Je ziet dat er één grote array is met daarin drie kleine arrays. Deze kleine a
 
 Probeer zelf een paar van dit soort arrays te maken in `irb`, zodat je echt begrijpt hoe ze werken.
 
-##De opdracht
-
-Je gaat beginnen met de computer de regels van het spel te leren. Zo moet hij weten wie er aan de beurt is, welke zetten er mogelijk zijn en wanneer het spel klaar is.
-
-###Het bord
-
-Om je op gang te helpen, hebben wij het spelbord voor je gemaakt. Als je het bestand `tictactoe.rb` opent, zie je een paar functies staan, waarvan vooral `drawboard` voor jou van belang is.
-
-Het bord wordt opgeslagen als een 2D-array met rondjes en kruisjes. Bekijk eens het voorbeeld in het script:
+## De opdracht
+### De spelregels
+Jullie zullen vooral aan de `Game`-klasse werken. Deze klasse bevat alle spellogica. We moeten aan een `Game`-object kunnen vragen wie er aan de beurt is, of het spel al over is, hoe het huidige bord eruit ziet, enzovoort. Bovendien moeten we een zet kunnen doen!
 
 {% highlight ruby %}
-voorbeeldbord = [[" ", "X", " "], 
-                 ["O", "X", " "], 
-                 [" ", " ", "O"]]
+game = Game.new
+game.over? # => false
+game.current_player # => "Player 1"
+game.play(1)
+game.current_player # => "Player 2"
 {% endhighlight %}
 
-Als je deze wilt tekenen, typ je in: 
+Het leek ons handig om de plaatsen op het bord te nummeren zoals het NumPad. 7 is linksboven, 1 is linksonder, enz. `game.play(1)` betekent: de speler die aan de beurt is speelt linksonder. Welke speler aan de beurt is, moet het `Game`-object zelf bijhouden.
+
+### Het bord tekenen
+
+Kijk eens naar de `Narrator`-klasse, in `narrator.rb`. Dit kun je ermee:
 
 {% highlight ruby %}
-puts drawboard(voorbeeldboard)
+narrator = Narrator.new
+
+board = [[" ", "X", " "], 
+        ["O", "X", " "], 
+        [" ", " ", "O"]]
+narrator.draw_board(board)
 {% endhighlight %}
 
-Kijk maar wat je dan krijgt! Als het goed gaat, zie je nog een bord ernaast met cijfers. Deze cijfers geven de plaats op het bord aan.
+Kijk maar wat je dan krijgt!
 
-###Spelregels
-Nu het spel zelf. Schrijf eens, zonder computer, voor jezelf op wat voor functies je nodig gaat hebben. Je mag zelf weten hoe je je programma gaat opbouwen. Een mogelijkheid is om te beginnen met een functie waar je aan kunt vragen of het spel al voorbij is (3 op een rij of bord vol).
+De lege functie `intro` mogen jullie gebruiken, maar het hoeft niet. Het is maar een ideetje. Je kunt er handig gebruik van maken in het hoofdbestand `tictactoe.rb`:
 
-###De speelbeurten
+{% highlight ruby %}
+narrator = Narrator.new
+narrator.intro 
+{% endhighlight %} 
 
-Nu schrijf je een functie die vraagt om een zet (met `gets`) en dan het spelbord bijwerkt. En dit moet natuurlijk afwisselend voor speler 1 en speler 2. Maak hierbij gebruik van de cijfers voor de plekken op het bord zoals in de functie `drawboard`.
+In `narrator.rb` kun je `intro` programmeren zoals je wilt. Misschien wil je de spelers begroeten, of de regels uitleggen. Het gaat erom dat het hoofdbestand `tictactoe.rb` overzichtelijk blijft: het scheelt enorm als je alleen een instructie hoeft te geven aan het `Narrator`-object. `narrator.intro` is een stuk duidelijker dan meerdere regels met `puts`- commando's.
 
-Controleer wel of een ingevoerde zet mag en of dan het het spel nog verder gaat of dat het voorbij is. Laat dan de functie stoppen en zeg wie er heeft gewonnen, of dat het gelijkspel is.
+### Pen en papier
+Het is verleidelijk om meteen te gaan typen. Maar begin eens met pen en papier. Hoe verloopt een speelbeurt? Wanneer is het spel afgelopen? Schroom niet om functies toe te voegen aan `Game` of `Narrator`.
 
-
+### (Extra) Tegen de computer
+De ultieme uitdaging van deze cursus. Maak een klasse `ComputerPlayer` en zorg dat je tegen de computer kunt spelen!
 
