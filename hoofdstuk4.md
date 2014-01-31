@@ -5,12 +5,7 @@ title: Hoofdstuk 4
 
 #Hoofdstuk 4: Tic Tac Toe
 
-*nog in ontwikkeling!*
-
-<p><iframe width="420" height="315" src="//www.youtube.com/embed/F7qOV8xonfY"
-  frameborder="0" allowfullscreen="allowfullscreen">  </iframe></p>
-
-Wie kent het niet: boter, kaas en eieren? Het werd al rond 100 jaar voor Christus gespeeld door de Romeinen en nu nog steeds. We gaan in deze les het spel aan de computer uitleggen, zodat je het digitaal kunt spelen. En in de extra opdracht kun je zelfs de computer tegen jou laten spelen.
+Wie kent het niet: boter, kaas en eieren? Het werd al rond 100 jaar voor Christus gespeeld door de Romeinen en nu nog steeds. We gaan in deze les het spel aan de computer uitleggen, zodat je het digitaal kunt spelen. In de extra opdracht kun je zelfs de computer tegen jou laten spelen.
 
 In dit hoofdstuk behandelen we:
 
@@ -252,4 +247,7 @@ Het is verleidelijk om meteen te gaan typen. Maar begin eens met pen en papier. 
 
 ### (Extra) Tegen de computer
 De ultieme uitdaging van deze cursus. Maak een klasse `ComputerPlayer` en zorg dat je tegen de computer kunt spelen!
+
+<p><iframe width="420" height="315" src="//www.youtube.com/embed/F7qOV8xonfY"
+  frameborder="0" allowfullscreen="allowfullscreen">  </iframe></p>
 
