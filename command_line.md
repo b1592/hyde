@@ -29,7 +29,7 @@ Je staat nu in de map Programmeren. Je zet een stap terug met:
 
 Nu sta je weer in `C:/`. Je kunt ook meerdere stappen tegelijk zetten:
 
-    cd Programmeren/Les1
+    cd Rubyprog/Hoofdstuk1
 
 Als je op tab drukt, wordt je invoer aangevuld. Probeer het maar eens. Met pijltje-omhoog en pijltje-omlaag kun je vorige commando's terughalen.
 
@@ -37,7 +37,7 @@ Als je op tab drukt, wordt je invoer aangevuld. Probeer het maar eens. Met pijlt
 Met `dir` kun je alle bestanden en mappen in de huidige map zien.
 
 ## ruby
-We voeren Ruby-programma's uit via de command line. Ga naar de map `Programmeren/Les1` en typ `dir`. Je ziet `hallo.rb` staan.
+We voeren Ruby-programma's uit via de command line. Ga naar de map `Rubyprog/Hoofdstuk1` en typ `dir`. Je ziet `hallo.rb` staan.
 
 Typ nu: `ruby hallo.rb`. Nu zie je:
 

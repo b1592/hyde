@@ -21,7 +21,7 @@ In de map Hoofdstuk 1 vind je de volgende bestanden:
 
 ### Iets op het scherm zetten: `puts`
 
-Open de map Programmeren in Sublime Text. (`File -> Open Folder...`). Links zie je allerlei mappen (Hoofdstuk 1, Hoofdstuk 2, etc.) staan. Open nu het bestand `hallo.rb` in de map "Hoofdstuk 1". Daar staat:
+Open de map `Rubyprog` in Sublime Text. (`File -> Open Folder...`). Links zie je allerlei mappen (Hoofdstuk 1, Hoofdstuk 2, etc.) staan. Open nu het bestand `hallo.rb` in de map "Hoofdstuk 1". Daar staat:
 
 {% highlight ruby %}
 
