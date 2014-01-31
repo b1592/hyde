@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Les 4
+title: Hoofdstuk 4
 ---
 
 #Hoofdstuk 4: Tic Tac Toe
@@ -12,7 +12,7 @@ title: Les 4
 
 Wie kent het niet: boter, kaas en eieren? Het werd al rond 100 jaar voor Christus gespeeld door de Romeinen en nu nog steeds. We gaan in deze les het spel aan de computer uitleggen, zodat je het digitaal kunt spelen. En in de extra opdracht kun je zelfs de computer tegen jou laten spelen.
 
-In deze les behandelen we:
+In dit hoofdstuk behandelen we:
 
 * This will become a table of contents (this text will be scraped).
 {:toc}
@@ -21,6 +21,7 @@ In deze les behandelen we:
 
 In deze map vind je de volgende bestanden:
 
+    Hoofdstuk4.url - deze beschrijving
     readme.html
     tictactoe.rb
     game.rb

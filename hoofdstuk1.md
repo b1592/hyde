@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Les 1
+title: Hoofdstuk 1
 ---
 
 #Hoofdstuk 1: hallo
@@ -12,16 +12,16 @@ We maken kennis met Ruby en Sublime Text. We praten tegen de computer en laten d
 
 ##De bestanden
 
-In de map Les 1 vind je de volgende bestanden:
+In de map Hoofdstuk 1 vind je de volgende bestanden:
 
+    Hoofdstuk1.url - deze beschrijving
     hallo.rb - het script waar je in gaat werken
-    opdracht.html - deze beschrijving
 
 ##Informatie
 
 ### Iets op het scherm zetten: `puts`
 
-Open de map Programmeren in Sublime Text. (`File -> Open Folder...`). Links zie je allerlei mappen (Les 1, Les 2, etc.) staan. Open nu het bestand `hallo.rb` in de map "Les1". Daar staat:
+Open de map Programmeren in Sublime Text. (`File -> Open Folder...`). Links zie je allerlei mappen (Hoofdstuk 1, Hoofdstuk 2, etc.) staan. Open nu het bestand `hallo.rb` in de map "Hoofdstuk 1". Daar staat:
 
 {% highlight ruby %}
 
