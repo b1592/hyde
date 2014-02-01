@@ -26,7 +26,7 @@ In deze map vind je de volgende bestanden:
 
 ### Objecten
 
-Om de echte wereld zo begrijpelijk mogelijk te vatten in code, gebruiken veel programmeertalen objecten (`Objects`). Ook Ruby. In onderstaand voorbeeld willen we boeken modelleren:
+Om de wereld zo begrijpelijk mogelijk te vatten in code, gebruiken veel programmeertalen objecten (`Objects`). Ook Ruby. In onderstaand voorbeeld willen we boeken modelleren:
 
 {% highlight ruby %}
 class Book
@@ -44,10 +44,10 @@ Een klasse (`Class`) is de blauwdruk van een object.
 
 {% highlight ruby %}
 book1 = Book.new("Lord of the Rings", "J. R. R. Tolkien", "Three Rings for the Elven-kings ...")
-book2 = Book.new("Titaantjes", "Nescio", "Jongens waren we - maar aardige jongens. Al zeg ik 't zelf...")
+book2 = Book.new("Titaantjes", "Nescio", "Jongens waren we - maar aardige jongens. Al zeg ik 't zelf ...")
 {% endhighlight %}
 
-Elk boek heeft dezelfde structuur, die wordt bepaalde door de klasse `Book`. Het is een container van de variabelen `author`, `title` en `content`. Variabelen die bij een object horen --- _instance variables_ --- beginnen met een `@`.
+Elk boek heeft dezelfde structuur, die wordt bepaald door de klasse `Book`. Het is een container van de variabelen `author`, `title` en `content`. Variabelen die bij een object horen --- _instance variables_ --- beginnen met een `@`.
 
 Deze variabelen zijn afgeschermd van de code buiten de klasse:
 
@@ -106,7 +106,7 @@ class Book
 end
 {% endhighlight %} 
 
-We kunnen nu dit doen (niet vergeten `:current_page` toe te voegen aan `attr_accessor`):
+Niet vergeten `:current_page` toe te voegen aan `attr_accessor`. Nu kunnen we dit doen:
 
 {% highlight ruby %}
 book1.current_page # => 1
@@ -114,7 +114,7 @@ book1.flip_page
 book1.current_page # => 2
 {% endhighlight %}
 
-Als we de woorden van een boek nodig hebben, dan definiëren we gewoon een functie `words`!
+Als we de woorden van een boek nodig hebben, dan definiëren we gewoon een functie `words`:
 
 {% highlight ruby %}
 class Book
@@ -138,7 +138,7 @@ end
 {% endhighlight %}
 
 {% highlight ruby %}
-book1.words # => ["Three", "rings", "for", ...
+book1.words # => ["Three", "rings", "for", ... ]
 {% endhighlight %}
 
 Wat is het voordeel van objecten? Zodra we de blauwdruk hebben gespecificeerd, kunnen we precies vragen aan het object wat we nodig hebben. Niets meer en niets minder. Dit geeft overzicht, en maakt software hergebruiken makkelijk.
@@ -161,16 +161,17 @@ getallen.max # => 5
 Laat je niet overdonderen. Het kost de meeste mensen minstens een half jaar om aan _objectgeörienteerd_ programmeren gewend te raken.
 
 ### `require` en `require_relative`
-Je hoeft het wiel niet opnieuw uit te vinden. Voorbeeld: je wilt random strings genereren. Daar heeft Ruby al iets op bedacht. Je "leent" het bestand `securerandom` uit de _standard library_. Hier staan alle files die standaard bij de Ruby-taal geleverd worden. Dat gaat zo:
+Je hoeft het wiel niet opnieuw uit te vinden. Voorbeeld: je wilt een datum omrekenen naar een weekdag. Daar heeft Ruby al iets op bedacht. Je "leent" het bestand `date` uit de _standard library_. Daar staan alle files die standaard bij de Ruby-taal geleverd worden. Dat gaat zo:
 
 {% highlight ruby %}
-require "securerandom"
+require "date"
 
-puts SecureRandom.hex
-# => "eb693ec8252cd630102fd0d0fb7c3485"
+date = Date.new(2014, 2, 3)
+date.wday # => 2
+date.tuesday? # => true
 {% endhighlight %}
 
-Nu kun je alle code uit `securerandom` aanroepen, zonder te weten wat er precies in dat bestand staat. In de documentatie lees je wat je er allemaal mee kunt doen.
+Nu kun je alle code uit `date` aanroepen, zonder te weten wat er precies in dat bestand staat. Op de [pagina van `date`](http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html#method-i-wday) staat wat je er mee kunt doen. In Ruby hoef je bijna geen basisfunctionaliteit zelf te schrijven. Kijk dus eerst in de [documentatie](http://ruby-doc.org/core-1.9.3/), zodat je geen onnodig werk doet.
 
 Grote programma's worden vaak gesplitst in meerdere bestanden. Dit geeft overzicht. Als je code uit je eigen mappen wilt aanroepen, moet je `require_relative` gebruiken.
 
@@ -206,7 +207,7 @@ Probeer zelf een paar van dit soort arrays te maken in `irb`, zodat je echt begr
 
 ## De opdracht
 ### De spelregels
-Jullie zullen vooral aan de `Game`-klasse werken. Deze klasse bevat alle spellogica. We moeten aan een `Game`-object kunnen vragen wie er aan de beurt is, of het spel al over is, hoe het huidige bord eruit ziet, enzovoort. Bovendien moeten we een zet kunnen doen!
+Jullie zullen vooral aan de `Game`-klasse werken. Deze klasse bevat alle spellogica. We moeten aan een `Game`-object kunnen vragen wie er aan de beurt is, of het spel al over is, hoe het huidige bord eruit ziet, enzovoort. Bovendien moeten we een zet kunnen doen.
 
 {% highlight ruby %}
 game = Game.new
