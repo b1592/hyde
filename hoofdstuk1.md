@@ -111,5 +111,5 @@ Je weet nu alles wat je nodig hebt om zelf aan de slag te gaan. Je eerste script
 
 * Begroet de gebruiker
 * Vraagt de naam van de gebruiker
-* Verwerkt de naam in een antwoord en vraagt de gebruiker om `jongen` of `meisje`, of `man` of `vrouw` in te typen.
+* Verwerkt de naam in een antwoord en vraagt de gebruiker om `jongen` of `meisje`, of `man` of `vrouw` in te typen
 * Maakt een persoonlijke begroeting, waarin de gebruiker wordt begroet met "Meneer" of "Mevrouw" en dan de naam, allemaal bepaald door wat de gebruiker eerder heeft ingetypt
