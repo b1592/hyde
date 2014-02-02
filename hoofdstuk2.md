@@ -176,3 +176,9 @@ We hebben een programma geschreven dat je functie aan een paar simpele tests ond
     ruby prime_test.rb
 
 Aan de slag!
+
+### (Extra) Duizendste priemgetal
+Je hebt de functie `prime?` geschreven. Kun je het duizendste priemgetal vinden? En het miljoenste? En het miljardste? Nu begint de snelheid van je algoritme een rol te spelen. Probeer je algoritme te optimaliseren. Check je niet onnodig veel getallen? Snelste algoritme van de klas krijgt een verrassing!
+
+### (Extra) Zeef van Eratosthenes
+Wat dacht je van alle priemgetallen onder de duizend? [Een oude Griek](http://nl.wikipedia.org/wiki/Zeef_van_Eratosthenes) heeft hier al over nagedacht.
