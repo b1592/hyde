@@ -20,8 +20,9 @@ In deze map vind je de volgende bestanden:
 
     Hoofstuk3.url - deze beschrijving
     cipher.rb - het script waar je in gaat werken
+    cipher_test.rb - wat simpele tests
     encrypted_message.txt - het versleutelde bestand met shift 12
-    encrypted_brute_force.txt - voor de laatste opdracht
+    secret.txt - voor de laatste opdracht
 
 ## Informatie
 
@@ -127,9 +128,9 @@ De volgende functies kunnen van pas komen:
 
 ##De opdracht
 
-###De functie `build_hash`
+###De functie `build_cipher`
 
-In deze opdracht ga je computer inzetten om berichten snel te versleutelen en weer te ontcijferen. Hiervoor zul je een aantal functies moeten schrijven. Begin bij een functie `build_hash`, die met een gegeven 'shift' (het aantal plaatsen dat elke letter moet worden verschoven) een hash aanmaakt.  
+In deze opdracht ga je de computer inzetten om berichten te versleutelen en weer te ontcijferen. Hiervoor zul je een aantal functies moeten schrijven. Begin bij een functie `build_cipher`, die met een gegeven _shift_ (het aantal plaatsen dat elke letter moet worden verschoven) een hash aanmaakt.  
 In deze hash moet elke letter in het alfabet gekoppeld worden aan de letter waar hij door vervangen moet worden. We vatten de spatie `" "` op als 27e letter. Een shift van 3 zou moeten opleveren:
 
 {% highlight ruby %}
@@ -142,7 +143,7 @@ Je ziet hier dat de "a" drie plaatsen is opgeschoven en in het gecodeerde berich
 
 ###De functie `encrypt`
 
-Dit is de functie waar het allemaal om draait. Als je deze functie een bericht en een bepaalde shift geeft, zou het de build_hash functie moeten aanroepen en dan vervolgens het bericht letter *voor* letter (denk hierbij aan een `for`loop) moeten coderen tot een rij tekst waar je niks zinnigs meer in ziet.
+Dit is de functie waar het allemaal om draait. Als je deze functie een bericht en een bepaalde shift geeft, zou het de build_cipher-functie moeten aanroepen en dan vervolgens het bericht letter *voor* letter (denk hierbij aan een `for`loop) moeten coderen tot tekst waar je niks zinnigs meer in ziet.
 
 ###De functie `decrypt`
 
@@ -152,14 +153,15 @@ Als je iets codeert, wil je het natuurlijk ook weer terug kunnen vertalen. Hierv
 
 Je hebt nu alles gemaakt om het bestand `encrypted_message.txt` te gaan ontcijferen. Lees het bestand in, draai het in zijn geheel door de `decrypt` functie en sla het ontcijferde stuk tekst op in `decrypted_message.txt`.
 
-### (Extra) Leestekens
+### (Extra) Hoofdletters, getallen en leestekens
 
-Je programma kan nu allerlei stukken tekst, zo lang als je maar wilt, versleutelen en weer decoderen. Maar je zult merken dat het niet meer werkt wanneer er andere tekens, zoals `; , . ! ?` in voor komen. Probeer een manier te bedenken om dit probleem te omzeilen en schrijf in `cipher_test.rb` een extra test om dit te testen.
+Je programma kan nu allerlei stukken tekst, zo lang als je maar wilt, versleutelen en weer decoderen. Maar hoofdletters, getallen en leestekens coderen lukt nog niet. Verzin hier iets op! Als je bepaalde karakters hetzelfde wilt houden (bijvoorbeeld leestekens), komt de functie `Hash#fetch` goed van pas.
 
-### (Extra) Kraken zonder shift
+Met de nieuwe `build_cipher` werken de tests niet meer. Als je het leuk vindt, kun je [hier](http://mattsears.com/articles/2011/12/10/minitest-quick-reference) vinden hoe je tests schrijft met `minitest`, één van de vele _test frameworks_ in Ruby.
 
+### (Extra) Geheim bericht kraken
 Nu gaan jullie een bericht ontcijferen! Hoe zou je dit doen?
 
-Je kunt alle mogelijkheden langsgaan. Deze methode heet Brute Force. Of is er een slimmere manier?
+Je kunt alle mogelijkheden langsgaan. Deze methode heet _brute force_. Of is er een slimmere manier?
 
-Probeer nu bestand `encrypted.txt` te kraken. Je mag hierbij gebruik maken van de woordenlijst die in de map staat. Denk goed na. Hoe weet de computer dat hij de juiste shift te pakken heeft? Veel succes!
+Het bericht staat in het bestand `secret.txt`.
