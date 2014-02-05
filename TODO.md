@@ -21,6 +21,7 @@
 * Hoe ga je met error messages om?
     - line numbers
     - meest voorkomende, zoals _undefined variable_ en _missing end_
+* Strings over meerdere regels (uberhaupt dingen over meerdere regels)
 
 
 

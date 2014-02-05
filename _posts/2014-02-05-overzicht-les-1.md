@@ -72,7 +72,51 @@ Met `!=` eis je dat twee dingen _niet_ gelijk aan elkaar zijn.
 5 != 10             # => true
 "Piet" != "Jan"     # => true
 "Jan" != "Jan"      # => false
-{% endhighlight %} 
+{% endhighlight %}
+
+### Error messages
+Ruby klaagt luidkeels als je een typfout maakt. All hope is not lost. Wat gebeurt hier?
+
+{% highlight ruby %}
+# test.rb
+correct == false 
+{% endhighlight %}
+
+Je bedoelde `correct = false`, maar je gebruikte `==`. Je vraagt Ruby de waarde van `correct` te checken, terwijl `correct` nog niet bestaat! Je krijgt nu:
+
+    test.rb:2:in `<main>': undefined local variable or method `correct'
+    for main:Object (NameError)
+
+Wat staat hier in godsnaam?
+* `test.rb:2`: Ruby zegt dat het in regel 1 van bestand `test.rb` is fout is gegaan. Het is een goed idee om daar een kijkje te nemen!
+* `undefined local variable or method 'correct'`: Ruby zegt dat `correct` niet gedefinieerd is.
+
+Genoeg informatie om je fout snel te herstellen. Nog een voorbeeld:
+
+{% highlight ruby %}
+correct = false
+while correct == false do
+    puts "Ben je een jongen, of een meisje?"
+    geslacht = gets.chomp
+    if geslacht == "jongen"
+        puts "Hallo, meneer"
+        correct = true
+    elsif geslacht == "meisje"
+        puts "Hallo, mevrouw"
+        correct = true
+    else
+        puts "Ik begrijp het niet, probeer het nog eens."
+end
+{% endhighlight %}
+
+Nu is de foutboodschap:
+
+    test.rb:13: syntax error, unexpected end-of-input, expecting keyword_end
+
+Het regelnummer is 13 (de laatste regel). Daar heb je niet zoveel aan. Maar de boodschap is duidelijker: `unexpected end-of-input, expecting keyword_end`. We zijn een `end` vergeten! Zien jullie waar?
+
+Elk apart codeblok moet je laten inspringen met Tab. Alles in de while loop hoort bij elkaar. Dit krijgt één Tab. Alles in de if-statements krijgt nóg een Tab. Nu is het makkelijk onthouden: elke Tab die je inspringt, moet je afsluiten met een `end`. We zijn hier twee Tabs ingesprongen, maar we hebben maar één `end`. Je ziet meteen dat het niet klopt.
+
 
 
 
