@@ -88,7 +88,7 @@ Je bedoelde `correct = false`, maar je gebruikte `==`. Je vraagt Ruby de waarde 
     for main:Object (NameError)
 
 Wat staat hier in godsnaam?
-* `test.rb:2`: Ruby zegt dat het in regel 1 van bestand `test.rb` is fout is gegaan. Het is een goed idee om daar een kijkje te nemen!
+* `test.rb:2`: Ruby zegt dat het in regel 2 van bestand `test.rb` is fout is gegaan. Het is een goed idee om daar een kijkje te nemen!
 * `undefined local variable or method 'correct'`: Ruby zegt dat `correct` niet gedefinieerd is.
 
 Genoeg informatie om je fout snel te herstellen. Nog een voorbeeld:
