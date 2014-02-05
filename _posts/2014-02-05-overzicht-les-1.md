@@ -117,6 +117,21 @@ Het regelnummer is 13 (de laatste regel). Daar heb je niet zoveel aan. Maar de b
 
 Elk apart codeblok moet je laten inspringen met Tab. Alles in de while loop hoort bij elkaar. Dit krijgt één Tab. Alles in de if-statements krijgt nóg een Tab. Nu is het makkelijk onthouden: elke Tab die je inspringt, moet je afsluiten met een `end`. We zijn hier twee Tabs ingesprongen, maar we hebben maar één `end`. Je ziet meteen dat het niet klopt.
 
+### Ruby Warrior
+Speel [hier](https://www.bloc.io/ruby-warrior/#/). Er gebeuren wat dingen die jullie nog niet snappen (aan het eind van de cursus wel.) De functie `play_turn` wordt steeds opnieuw uitgevoerd. Als je een functie gebruikt met een uitroepteken, zoals `warrior.walk!`, dan is de beurt voorbij en begin je vooraan `play_turn`. Dus je kunt maar één keer lopen, slaan of healen per beurt.
+
+In het eerste level hoef je alleen maar vooruit te lopen: 
+
+{% highlight ruby %}
+def play_turn(warrior)
+    warrior.walk!
+end
+{% endhighlight %}
+
+Links in beeld voor staan alle functies uitgelegd. Succes!
+
+
+
 
 
 
