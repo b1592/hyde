@@ -12,7 +12,7 @@ Bedankt voor de interesse gisteren! Wij kijken uit naar volgende week. Hier een 
 
 ## Voor thuis
 * [Installeer](/installatie/) Ruby en Sublime Text.
-* Probeer de eerste paar bladzijden van de [command line crash course](http://cli.learncodethehardway.org/book/). In plaats van `cmd` werkt dit boek met `powershell`, maar de verschillen zijn heel klein. Bovendien hebben de computers op het Felisenum ook `powershell` (zoals één van jullie terecht opmerkte.)
+* Probeer de eerste paar bladzijden van de [command line crash course](http://cli.learncodethehardway.org/book/). In plaats van `cmd` werkt dit boek met `powershell`, maar de verschillen zijn heel klein. Bovendien hebben de computers op het Felisenum ook `powershell` (zoals Daan terecht opmerkte.)
 * [Ruby Warrior](https://www.bloc.io/ruby-warrior/#/)! Wie komt er langs level 4? Zie onder voor een korte uitleg. De eerste die de code voor level 4 naar ons mailt krijgt een verrassing&hellip;
 
 ## Extra informatie hoofdstuk 1
