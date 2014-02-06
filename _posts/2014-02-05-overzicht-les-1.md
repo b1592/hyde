@@ -18,9 +18,9 @@ Bedankt voor de interesse gisteren! Wij kijken uit naar volgende week. Hier een 
 ## Extra informatie hoofdstuk 1
 
 ### While loop (voor de extra opdracht)
-Je hebt een programma dat "Hoi meneer!" of "Hoi mevrouw" en de juiste naam zegt. Hoe kun je er voor zorgen dat het programma doorgaat tot de gebruiker het _eindelijk_ goed heeft ingevoerd? Met een [while loop](http://localhost:4000/hoofdstuk2/#whileloop)!
+Je hebt een programma dat "Hoi meneer!" of "Hoi mevrouw" en de juiste naam zegt. Hoe kun je er voor zorgen dat het programma doorgaat tot de gebruiker het _eindelijk_ goed heeft ingevoerd? Met een [while loop](/hoofdstuk2/#whileloop)!
 
-Net als bij een [`if-statement`](http://localhost:4000/hoofdstuk1/#het_statement), checkt een while loop een [logische uitspraak](http://localhost:4000/hoofdstuk2/#logische_uitspraken). Welke logische uitspraak moeten we in dit geval checken? Wij hadden zoiets bedacht:
+Net als bij een [`if-statement`](/hoofdstuk1/#het_statement), checkt een while loop een [logische uitspraak](/hoofdstuk2/#logische_uitspraken). Welke logische uitspraak moeten we in dit geval checken? Wij hadden zoiets bedacht:
 
 {% highlight ruby %}
 correct = false
