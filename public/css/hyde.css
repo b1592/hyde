@@ -523,3 +523,17 @@ a:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+
+
+/* Header */
+header {
+  height: 120px;
+  color: #fff;
+  background-color: #ac4142;
+}
+
+.navbar {
+  background-color: #ac4142;
+
+}
