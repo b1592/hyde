@@ -458,7 +458,7 @@ a:focus {
 }
 .theme-base-08 .container a,
 .theme-base-08 .related-posts li a:hover {
-  color: #ac4142;
+  color: #e74c3c;
 }
 
 /* Orange */
@@ -527,13 +527,11 @@ a:focus {
 
 
 /* Header */
-header {
-  height: 120px;
+/*header {
   color: #fff;
-  background-color: #ac4142;
+  background-color: #c0392b;
 }
 
-.navbar {
-  background-color: #ac4142;
-
-}
+nav {
+  padding: 20px 0 0 0;
+}*/
