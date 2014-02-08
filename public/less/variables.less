@@ -43,8 +43,8 @@
 @inverse:                   white;
 
 // Brand colors
-@brand-primary:             @alizarin;
-@brand-secondary:           @pomegranate;
+@brand-primary:             @pomegranate;
+@brand-secondary:           @midnight-blue;
 @brand-success:             @emerald;
 @brand-warning:             @sun-flower;
 @brand-danger:              @alizarin;
@@ -56,11 +56,11 @@
 //## Settings for some of the most global styles.
 
 @body-bg:                   #fff;
-@text-color:                @brand-primary;
+@text-color:                @midnight-blue;
 
 //** Global textual link color.
-@link-color:                @green-sea;
-@link-hover-color:          @turquoise;
+@link-color:                @brand-primary;
+@link-hover-color:          @brand-secondary;
 
 
 //== Typography
@@ -303,10 +303,10 @@
 
 // Inverted navbar links
 @navbar-inverse-link-color:           @inverse;
-@navbar-inverse-link-hover-color:     @brand-secondary;
+@navbar-inverse-link-hover-color:     @inverse;
 @navbar-inverse-link-hover-bg:        transparent;
 @navbar-inverse-link-active-color:    @navbar-inverse-link-color;
-@navbar-inverse-link-active-bg:       @brand-secondary;
+@navbar-inverse-link-active-bg:       transparent;
 @navbar-inverse-link-disabled-color:  #444;
 @navbar-inverse-link-disabled-bg:     transparent;
 
@@ -334,8 +334,8 @@
 @navbar-inverse-dropdown-arrow:             @navbar-inverse-bg;
 @navbar-inverse-dropdown-bg:                @navbar-inverse-bg;
 @navbar-inverse-dropdown-link-color:        mix(@navbar-inverse-bg, @navbar-inverse-color, 15%);
-@navbar-inverse-dropdown-link-hover-color:  @inverse;
-@navbar-inverse-dropdown-link-hover-bg:     @brand-secondary;
+@navbar-inverse-dropdown-link-hover-color:  @navbar-inverse-link-hover-color;
+@navbar-inverse-dropdown-link-hover-bg:     transparent;
 
 
 //== Dropdown Menu
