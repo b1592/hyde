@@ -199,21 +199,22 @@ you can use the generic selector below, but it's slower:
   border-top-color: #c0392b !important;
 }
 body {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  line-height: 1.72222;
+  line-height: 1.5;
   color: #2c3e50;
   background-color: #ffffff;
 }
 a {
   color: #c0392b;
   text-decoration: none;
+  font-weight: 600;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 a:hover,
 a:focus {
-  color: #2c3e50;
+  color: #c0392b;
   text-decoration: underline;
 }
 a:focus {
@@ -224,7 +225,7 @@ a:focus {
 }
 .img-thumbnail {
   padding: 4px;
-  line-height: 1.72222;
+  line-height: 1.5;
   background-color: #ffffff;
   border: 2px solid #bdc3c7;
   border-radius: 6px;
@@ -274,49 +275,49 @@ h6 small,
 h1,
 h2,
 h3 {
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin-top: 27px;
+  margin-bottom: 13.5px;
 }
 h4,
 h5,
 h6 {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 13.5px;
+  margin-bottom: 13.5px;
 }
 h6 {
   font-weight: normal;
 }
 h1,
 .h1 {
-  font-size: 61px;
+  font-size: 40px;
 }
 h2,
 .h2 {
-  font-size: 53px;
+  font-size: 33px;
 }
 h3,
 .h3 {
-  font-size: 40px;
+  font-size: 24px;
 }
 h4,
 .h4 {
-  font-size: 29px;
+  font-size: 16px;
 }
 h5,
 .h5 {
-  font-size: 28px;
+  font-size: 16px;
 }
 h6,
 .h6 {
-  font-size: 24px;
+  font-size: 16px;
 }
 p {
   font-size: 18px;
-  line-height: 1.72222;
-  margin: 0 0 15px;
+  line-height: 1.5;
+  margin: 0 0 13.5px;
 }
 .lead {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   font-size: 28px;
   line-height: 1.46428571;
   font-weight: 300;
@@ -399,20 +400,20 @@ a.bg-danger:hover {
   background-color: #e4b9b9;
 }
 .page-header {
-  padding-bottom: 14px;
-  margin: 60px 0 30px;
+  padding-bottom: 12.5px;
+  margin: 54px 0 27px;
   border-bottom: 1px solid #f7e7e6;
 }
 ul,
 ol {
-  margin-bottom: 15px;
+  margin-bottom: 13.5px;
 }
 dl {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 dt,
 dd {
-  line-height: 1.72222;
+  line-height: 1.5;
 }
 @media (min-width: 768px) {
   .dl-horizontal dt {
@@ -429,7 +430,7 @@ abbr[data-original-title] {
 blockquote {
   border-left: 3px solid #f7e7e6;
   padding: 0 0 0 16px;
-  margin: 0 0 30px;
+  margin: 0 0 27px;
 }
 blockquote p {
   font-size: 20px;
@@ -440,7 +441,7 @@ blockquote p {
 blockquote small,
 blockquote .small {
   font-size: 18px;
-  line-height: 1.72222;
+  line-height: 1.5;
   font-style: italic;
   color: inherit;
 }
@@ -458,8 +459,8 @@ blockquote.pull-right small:after {
   content: "";
 }
 address {
-  margin-bottom: 30px;
-  line-height: 1.72222;
+  margin-bottom: 27px;
+  line-height: 1.5;
 }
 code,
 kbd,
@@ -470,8 +471,8 @@ samp {
 code {
   padding: 2px 6px;
   font-size: 85%;
-  color: #c7254e;
-  background-color: #f9f2f4;
+  color: #81261d;
+  background-color: #f9ebea;
   border-radius: 4px;
 }
 kbd {
@@ -483,15 +484,18 @@ kbd {
   box-shadow: none;
 }
 pre {
-  padding: 8px;
-  margin: 0 0 15px;
+  padding: 7px;
+  margin: 0 0 13.5px;
   font-size: 13px;
-  line-height: 1.72222;
+  line-height: 1.5;
   color: inherit;
-  background-color: #ffffff;
+  background-color: #f9ebea;
   border: 2px solid #f7e7e6;
   border-radius: 6px;
   white-space: pre;
+}
+pre code {
+  font-size: 17.1px;
 }
 .pre-scrollable {
   max-height: 340px;
@@ -500,7 +504,7 @@ pre {
   display: block;
   padding: 4px;
   margin-bottom: 5px;
-  line-height: 1.72222;
+  line-height: 1.5;
   background-color: #ffffff;
   border: 2px solid #bdc3c7;
   border-radius: 6px;
@@ -526,7 +530,7 @@ a.thumbnail.active {
 }
 .btn {
   border: none;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: normal;
   line-height: 1.4;
   border-radius: 4px;
@@ -845,7 +849,7 @@ fieldset[disabled] .btn-inverse.active {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #2c3e50;
+  color: #c0392b;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -858,25 +862,25 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-hg {
   padding: 13px 20px;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 1.227;
   border-radius: 6px;
 }
 .btn-lg {
   padding: 10px 19px;
-  font-size: 17px;
+  font-size: 21px;
   line-height: 1.471;
   border-radius: 6px;
 }
 .btn-sm {
   padding: 9px 13px;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.385;
   border-radius: 4px;
 }
 .btn-xs {
   padding: 6px 9px;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.083;
   border-radius: 3px;
 }
@@ -910,25 +914,25 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-group-xs > .btn {
   padding: 6px 9px;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.083;
   border-radius: 3px;
 }
 .btn-group-sm > .btn {
   padding: 9px 13px;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.385;
   border-radius: 4px;
 }
 .btn-group-lg > .btn {
   padding: 10px 19px;
-  font-size: 17px;
+  font-size: 21px;
   line-height: 1.471;
   border-radius: 6px;
 }
 .btn-group-gh > .btn {
   padding: 13px 20px;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 1.227;
   border-radius: 6px;
 }
@@ -1114,8 +1118,8 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 15px;
-  font-size: 24px;
+  margin-bottom: 13.5px;
+  font-size: 28.8px;
   line-height: inherit;
   color: inherit;
   border-bottom: none;
@@ -1130,7 +1134,7 @@ input[type="search"] {
 }
 label {
   font-weight: normal;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 2.4;
 }
 .form-control:-moz-placeholder {
@@ -1152,8 +1156,8 @@ label {
 .form-control {
   border: 2px solid #bdc3c7;
   color: #c0392b;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
   line-height: 1.467;
   padding: 8px 12px;
   height: 42px;
@@ -1193,7 +1197,7 @@ fieldset[disabled] .form-control {
 .input-sm {
   height: 35px;
   padding: 6px 10px;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.462;
   border-radius: 6px;
 }
@@ -1208,7 +1212,7 @@ select[multiple].input-sm {
 .input-lg {
   height: 45px;
   padding: 10px 15px;
-  font-size: 17px;
+  font-size: 21px;
   line-height: 1.235;
   border-radius: 6px;
 }
@@ -1223,7 +1227,7 @@ select[multiple].input-lg {
 .input-hg {
   height: 53px;
   padding: 10px 16px;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 1.318;
   border-radius: 6px;
 }
@@ -1356,7 +1360,7 @@ select[multiple].input-hg {
   background-color: #ffffff;
 }
 .help-block {
-  font-size: 15px;
+  font-size: 18px;
   margin-bottom: 5px;
   color: inherit;
 }
@@ -1399,7 +1403,7 @@ select[multiple].input-hg {
   right: 2px;
   line-height: 37px;
   vertical-align: middle;
-  font-size: 20px;
+  font-size: 24px;
   color: #f3dfdd;
   background-color: #ffffff;
   padding: 0 12px 0 0;
@@ -1441,7 +1445,7 @@ fieldset[disabled] .form-control + .input-icon,
 .input-group-hg > .input-group-btn > .btn {
   height: 53px;
   padding: 10px 16px;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 1.318;
   border-radius: 6px;
 }
@@ -1464,7 +1468,7 @@ select[multiple].input-group-hg > .input-group-btn > .btn {
 .input-group-lg > .input-group-btn > .btn {
   height: 45px;
   padding: 10px 15px;
-  font-size: 17px;
+  font-size: 21px;
   line-height: 1.235;
   border-radius: 6px;
 }
@@ -1487,7 +1491,7 @@ select[multiple].input-group-lg > .input-group-btn > .btn {
 .input-group-sm > .input-group-btn > .btn {
   height: 35px;
   padding: 6px 10px;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.462;
   border-radius: 6px;
 }
@@ -1507,7 +1511,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .input-group-addon {
   padding: 10px 12px;
-  font-size: 15px;
+  font-size: 18px;
   color: #ffffff;
   text-align: center;
   background-color: #bdc3c7;
@@ -1719,7 +1723,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   position: relative;
   -webkit-transition: color 0.25s linear;
   transition: color 0.25s linear;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.5;
 }
 .checkbox input,
@@ -1857,9 +1861,9 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   margin-top: 10px;
 }
 .navbar {
-  font-size: 16px;
+  font-size: 19px;
   min-height: 76px;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   border: none;
   border-radius: 0;
 }
@@ -1937,13 +1941,13 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   border-width: 0;
 }
 .navbar-brand {
-  font-size: 24px;
+  font-size: 36px;
   line-height: 1.042;
   font-weight: 700;
   padding: 25.5px 21px;
 }
 .navbar-brand > [class*="fui-"] {
-  font-size: 19px;
+  font-size: 22px;
   line-height: 1.263;
   vertical-align: top;
 }
@@ -1965,7 +1969,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   color: #c0392b;
   content: "\e00c";
   font-family: "Flat-UI-Icons";
-  font-size: 22px;
+  font-size: 26px;
   font-style: normal;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
@@ -1978,7 +1982,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 }
 .navbar-toggle:hover:before,
 .navbar-toggle:focus:before {
-  color: #2c3e50;
+  color: #c0392b;
 }
 .navbar-toggle .icon-bar {
   display: none;
@@ -1992,7 +1996,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   margin: 0;
 }
 .navbar-nav > li > a {
-  font-size: 16px;
+  font-size: 19px;
   padding: 26.5px 21px;
   line-height: 23px;
   font-weight: 700;
@@ -2013,8 +2017,8 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 .navbar-nav > li > a:focus .caret,
 .navbar-nav .open > a:focus .caret,
 .navbar-nav .open > a:hover .caret {
-  border-top-color: #2c3e50;
-  border-bottom-color: #2c3e50;
+  border-top-color: #c0392b;
+  border-bottom-color: #c0392b;
 }
 .navbar-nav [class^="fui-"] {
   line-height: 20px;
@@ -2044,7 +2048,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 .navbar-input {
   height: 35px;
   padding: 5px 10px;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.4;
   border-radius: 6px;
 }
@@ -2088,7 +2092,7 @@ select[multiple].navbar-input {
 .navbar-form .btn {
   height: 35px;
   padding: 5px 10px;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.4;
   border-radius: 6px;
 }
@@ -2123,12 +2127,12 @@ select[multiple].navbar-form .btn {
   border-top-left-radius: 0;
 }
 .navbar-form .form-control {
-  font-size: 15px;
+  font-size: 18px;
   border-radius: 5px;
   display: table-cell;
 }
 .navbar-form .form-group + .btn {
-  font-size: 15px;
+  font-size: 18px;
   border-radius: 5px;
   margin-left: 4px;
 }
@@ -2168,7 +2172,7 @@ select[multiple].navbar-form .btn {
   background-color: transparent;
 }
 .navbar-text {
-  font-size: 16px;
+  font-size: 19px;
   line-height: 1.438;
   color: #c0392b;
   margin-top: 0;
@@ -2199,7 +2203,7 @@ select[multiple].navbar-form .btn {
 }
 .navbar-unread,
 .navbar-new {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   background-color: #2c3e50;
   border-radius: 50%;
   color: #ffffff;
@@ -2640,11 +2644,11 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   padding-bottom: 26px;
 }
 .navbar-lg .navbar-brand > [class*="fui-"] {
-  font-size: 24px;
+  font-size: 28px;
   line-height: 1;
 }
 .navbar-lg .navbar-nav > li > a {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.6;
 }
 @media (min-width: 768px) {
@@ -2691,7 +2695,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   border-radius: 4px;
   background-color: #2c3e50;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 17px;
   cursor: pointer;
   display: inline-block;
   margin-right: 5px;
@@ -2719,8 +2723,8 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   background: transparent;
   border: none;
   color: #c0392b;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 17px;
   margin: 0px;
   padding: 0 0 0 5px;
   outline: none !important;
@@ -2759,7 +2763,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1;
   margin-bottom: 5px;
   padding: 7px 9px;
@@ -2791,8 +2795,8 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
 .twitter-typeahead .tt-hint {
   border: 2px solid #bdc3c7;
   color: #c0392b;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
   line-height: 1.467;
   padding: 8px 12px;
   height: 42px;
@@ -2865,7 +2869,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
   right: 2px;
   line-height: 37px;
   vertical-align: middle;
-  font-size: 20px;
+  font-size: 24px;
   color: #f3dfdd;
   background-color: #ffffff;
   padding: 0 12px 0 0;
@@ -2881,7 +2885,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
 }
 .twitter-typeahead .tt-suggestion p {
   padding: 6px 14px;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.429;
   margin: 0;
 }
@@ -2962,7 +2966,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
 }
 .ui-slider-value {
   float: right;
-  font-size: 13px;
+  font-size: 15px;
   margin-top: 12px;
 }
 .ui-slider-value.first {
@@ -3077,7 +3081,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
   background: transparent;
   border: none;
   border-right: 2px solid #f7e5e3;
-  font-size: 16px;
+  font-size: 19px;
   margin: 0 9px 0 0;
   padding: 12px 17px;
   border-radius: 6px 0 0 6px;
@@ -3164,7 +3168,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
   background: #ffffff;
   border: 5px solid #f2d7d5;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 16px;
   margin: 7px 2px 6px;
   min-width: 0;
@@ -3192,7 +3196,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
 .pagination > .btn.previous,
 .pagination > .btn.next {
   margin-right: 8px;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.429;
   padding-left: 23px;
   padding-right: 23px;
@@ -3212,7 +3216,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
   margin-left: 4px;
 }
 .tooltip {
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.286;
 }
 .tooltip.in {
@@ -3466,7 +3470,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
   border-radius: 30px;
   display: inline-block;
   cursor: pointer;
-  line-height: 1.72222;
+  line-height: 1.5;
   overflow: hidden;
   position: relative;
   text-align: left;
@@ -3498,7 +3502,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
   transition: left 0.25s ease-out;
 }
 .has-switch > div.switch-off {
-  left: -49.99999999px;
+  left: -50px;
 }
 .has-switch > div.switch-off label {
   background-color: #d78279;
@@ -3517,7 +3521,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
 }
 .has-switch span {
   cursor: pointer;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
   float: left;
   height: 29px;
@@ -3609,7 +3613,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
   padding: 15px;
 }
 .share li {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.4;
   padding-top: 11px;
 }
@@ -3646,7 +3650,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
   margin: 0 0 20px 20px;
 }
 .palette {
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.214;
   color: #ffffff;
   margin: 0;
@@ -3803,7 +3807,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
   background: #c0392b url(../images/todo/todo.png) 92% center no-repeat;
   background-size: 20px 20px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.214;
   margin-top: 2px;
   padding: 18px 42px 21px 25px;
@@ -3898,7 +3902,7 @@ input.todo-search-field.placeholder {
 }
 .video-js {
   background-color: transparent;
-  margin-top: -94.99999999px;
+  margin-top: -95px;
   position: relative;
   padding: 0;
   font-size: 10px;
@@ -3957,7 +3961,7 @@ body.vjs-full-window {
   bottom: 4em;
   left: 1em;
   right: 1em;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 .video-js .vjs-text-track {
   display: none;
@@ -4194,7 +4198,7 @@ body.vjs-full-window {
   height: 20px;
   width: 50px;
   top: 16px;
-  font: 300 13px "Lato", Helvetica, Arial, sans-serif;
+  font: 300 13px "Open Sans", Helvetica, Arial, sans-serif;
 }
 .vjs-current-time {
   right: 128px;
@@ -4220,7 +4224,7 @@ body.vjs-full-window {
 }
 .vjs-fullscreen-control {
   background-image: url(../images/video/fullscreen.png);
-  background-position: center -47px;
+  background-position: center -46.99999999px;
   background-size: 15px 64px;
   cursor: pointer !important;
   position: absolute;
@@ -4699,4 +4703,60 @@ footer p {
 .mhl,
 .mal {
   margin-left: 20px;
+}
+.nav > li > a:hover,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  text-decoration: underline;
+}
+nav {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+.navbar-brand {
+  margin-top: -7px;
+}
+.content {
+  padding: 20px 20px;
+}
+/* Meta data line below post title */
+.post-date {
+  display: block;
+  margin: -10px 0 10px;
+  color: #7f8c8d;
+}
+/*
+ * Pagination
+ *
+ * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+ * there are no more previous or next posts to show.
+ */
+.pagination {
+  overflow: hidden;
+  /* clearfix */
+  margin-top: 40px;
+  font-weight: bold;
+  color: #bdc3c7;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+/* Pagination should float when space is plentiful */
+@media (min-width: 990px) {
+  .pagination {
+    margin-bottom: 60px;
+    border: 1px solid #eee;
+  }
+}
+.pagination a,
+.pagination span {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+.pagination a:first-child,
+.pagination span:first-child {
+  border-right: 1px solid #eee;
+}
+.pagination a:hover {
+  text-decoration: none;
+  background-color: #f5f5f5;
 }

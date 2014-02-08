@@ -5,12 +5,15 @@
 
   <body class="layout-reverse theme-base-08">
 
-    {% include header.html %}
+  {% include header.html %} 
 
-    <div class="content container">
-      {{ content }}
-    </div>
-
+    <div class="container content">
+      <div class="row">
+        <div class="col-lg-8">
+          {{ content }}
+        </div>
+        <div class="col-lg-4"></div>
+      </div>
   {% include analytics.html %}
 
   <!-- Load JS here for greater good =============================-->
