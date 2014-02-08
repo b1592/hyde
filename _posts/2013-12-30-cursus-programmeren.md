@@ -7,8 +7,8 @@ Programmeren is praten tegen een computer --- een programma schrijven.
 
 Maar programmeren is ook: zelf iets maken en ontwerpen. Puzzelen. Honderd problemen oplossen. Elke keer iets nieuws leren. Divers. Overal te gebruiken. **Overal nodig**.
 
-<p><iframe width="420" height="315" src="//www.youtube.com/embed/dU1xS07N-FA"
-  frameborder="0" allowfullscreen="allowfullscreen">  </iframe></p>
+<p><video width="420" height="315" src="//www.youtube.com/embed/dU1xS07N-FA"
+  frameborder="0" allowfullscreen="allowfullscreen">  </video></p>
 
 Wij geven een cursus van zes weken aan het [Gymnasium Felisenum](http://www.felisenum.nl/) in Velsen. Hierin leren we jullie het "Aap (App?) Noot Mies" van programmeren.
 

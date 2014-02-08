@@ -1862,7 +1862,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 }
 .navbar {
   font-size: 19px;
-  min-height: 76px;
+  min-height: 100px;
   margin-bottom: 27px;
   border: none;
   border-radius: 0;
@@ -1944,7 +1944,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   font-size: 36px;
   line-height: 1.042;
   font-weight: 700;
-  padding: 25.5px 21px;
+  padding: 37.5px 21px;
 }
 .navbar-brand > [class*="fui-"] {
   font-size: 22px;
@@ -1962,8 +1962,8 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   color: #c0392b;
   margin: 0 0 0 21px;
   padding: 0 21px;
-  height: 76px;
-  line-height: 76px;
+  height: 100px;
+  line-height: 100px;
 }
 .navbar-toggle:before {
   color: #c0392b;
@@ -1997,7 +1997,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 }
 .navbar-nav > li > a {
   font-size: 19px;
-  padding: 26.5px 21px;
+  padding: 38.5px 21px;
   line-height: 23px;
   font-weight: 700;
 }
@@ -2067,8 +2067,8 @@ select[multiple].navbar-input {
   margin-bottom: 0;
   padding-right: 19px;
   padding-left: 19px;
-  padding-top: 20.5px;
-  padding-bottom: 20.5px;
+  padding-top: 32.5px;
+  padding-bottom: 32.5px;
 }
 @media (max-width: 767px) {
   .navbar-form .form-group {
@@ -2177,8 +2177,8 @@ select[multiple].navbar-form .btn {
   color: #c0392b;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 26.5px;
-  padding-bottom: 26.5px;
+  padding-top: 38.5px;
+  padding-bottom: 38.5px;
 }
 @media (min-width: 768px) {
   .navbar-text {
@@ -2190,16 +2190,16 @@ select[multiple].navbar-form .btn {
   }
 }
 .navbar-btn {
-  margin-top: 17.5px;
-  margin-bottom: 17.5px;
+  margin-top: 29.5px;
+  margin-bottom: 29.5px;
 }
 .navbar-btn.btn-sm {
-  margin-top: 20.5px;
-  margin-bottom: 19.5px;
+  margin-top: 32.5px;
+  margin-bottom: 31.5px;
 }
 .navbar-btn.btn-xs {
-  margin-top: 25.5px;
-  margin-bottom: 25.5px;
+  margin-top: 37.5px;
+  margin-bottom: 37.5px;
 }
 .navbar-unread,
 .navbar-new {
@@ -4442,13 +4442,13 @@ body.vjs-full-window {
   }
 }
 footer {
-  background-color: #f9edec;
-  color: #eabcb7;
+  background-color: #f9ebea;
+  color: #cd6155;
   font-size: 15px;
   padding: 0;
 }
 footer a {
-  color: #e09c95;
+  color: #cd6155;
   font-weight: 700;
 }
 footer p {
@@ -4717,6 +4717,12 @@ nav {
 }
 .content {
   padding: 20px 20px;
+}
+footer #logo {
+  margin-top: 32px;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  text-decoration: none;
+  font-size: 24px;
 }
 /* Meta data line below post title */
 .post-date {
