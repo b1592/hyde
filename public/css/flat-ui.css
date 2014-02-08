@@ -202,7 +202,7 @@ body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  color: #2c3e50;
+  color: #414544;
   background-color: #ffffff;
 }
 a {
@@ -495,7 +495,7 @@ pre {
   white-space: pre;
 }
 pre code {
-  font-size: 17.1px;
+  font-size: 16.2px;
 }
 .pre-scrollable {
   max-height: 340px;
@@ -526,7 +526,7 @@ a.thumbnail.active {
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #2c3e50;
+  color: #414544;
 }
 .btn {
   border: none;
@@ -3902,7 +3902,7 @@ input.todo-search-field.placeholder {
 }
 .video-js {
   background-color: transparent;
-  margin-top: -94.99999999px;
+  margin-top: -95px;
   position: relative;
   padding: 0;
   font-size: 10px;
@@ -4224,7 +4224,7 @@ body.vjs-full-window {
 }
 .vjs-fullscreen-control {
   background-image: url(../images/video/fullscreen.png);
-  background-position: center -47px;
+  background-position: center -46.99999999px;
   background-size: 15px 64px;
   cursor: pointer !important;
   position: absolute;
@@ -4703,6 +4703,23 @@ footer p {
 .mhl,
 .mal {
   margin-left: 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 10px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
+}
+h2 {
+  margin-top: 20px;
+}
+h3 {
+  margin-top: 24px;
 }
 .nav > li > a:hover,
 .dropdown-menu > li > a:hover,

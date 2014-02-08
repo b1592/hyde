@@ -10,14 +10,14 @@ We maken kennis met Ruby en Sublime Text. We praten tegen de computer en laten d
 * This will become a table of contents (this text will be scraped).
 {:toc}
 
-##De bestanden
+## De bestanden
 
 In de map Hoofdstuk 1 vind je de volgende bestanden:
 
     Hoofdstuk1.url - deze beschrijving
     hallo.rb - het script waar je in gaat werken
 
-##Informatie
+## Informatie
 
 ### Iets op het scherm zetten: `puts`
 
