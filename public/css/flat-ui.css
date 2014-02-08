@@ -530,7 +530,7 @@ a.thumbnail.active {
 }
 .btn {
   border: none;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1.4;
   border-radius: 4px;
@@ -862,25 +862,25 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-hg {
   padding: 13px 20px;
-  font-size: 26px;
+  font-size: 23px;
   line-height: 1.227;
   border-radius: 6px;
 }
 .btn-lg {
   padding: 10px 19px;
-  font-size: 21px;
+  font-size: 19px;
   line-height: 1.471;
   border-radius: 6px;
 }
 .btn-sm {
   padding: 9px 13px;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.385;
   border-radius: 4px;
 }
 .btn-xs {
   padding: 6px 9px;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.083;
   border-radius: 3px;
 }
@@ -914,25 +914,25 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-group-xs > .btn {
   padding: 6px 9px;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.083;
   border-radius: 3px;
 }
 .btn-group-sm > .btn {
   padding: 9px 13px;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.385;
   border-radius: 4px;
 }
 .btn-group-lg > .btn {
   padding: 10px 19px;
-  font-size: 21px;
+  font-size: 19px;
   line-height: 1.471;
   border-radius: 6px;
 }
 .btn-group-gh > .btn {
   padding: 13px 20px;
-  font-size: 26px;
+  font-size: 23px;
   line-height: 1.227;
   border-radius: 6px;
 }
@@ -1119,7 +1119,7 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 13.5px;
-  font-size: 28.8px;
+  font-size: 25.6px;
   line-height: inherit;
   color: inherit;
   border-bottom: none;
@@ -1134,7 +1134,7 @@ input[type="search"] {
 }
 label {
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2.4;
 }
 .form-control:-moz-placeholder {
@@ -1157,7 +1157,7 @@ label {
   border: 2px solid #bdc3c7;
   color: #ab3326;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.467;
   padding: 8px 12px;
   height: 42px;
@@ -1197,7 +1197,7 @@ fieldset[disabled] .form-control {
 .input-sm {
   height: 35px;
   padding: 6px 10px;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.462;
   border-radius: 6px;
 }
@@ -1212,7 +1212,7 @@ select[multiple].input-sm {
 .input-lg {
   height: 45px;
   padding: 10px 15px;
-  font-size: 21px;
+  font-size: 19px;
   line-height: 1.235;
   border-radius: 6px;
 }
@@ -1227,7 +1227,7 @@ select[multiple].input-lg {
 .input-hg {
   height: 53px;
   padding: 10px 16px;
-  font-size: 26px;
+  font-size: 23px;
   line-height: 1.318;
   border-radius: 6px;
 }
@@ -1360,7 +1360,7 @@ select[multiple].input-hg {
   background-color: #ffffff;
 }
 .help-block {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 5px;
   color: inherit;
 }
@@ -1403,7 +1403,7 @@ select[multiple].input-hg {
   right: 2px;
   line-height: 37px;
   vertical-align: middle;
-  font-size: 24px;
+  font-size: 22px;
   color: #edceca;
   background-color: #ffffff;
   padding: 0 12px 0 0;
@@ -1445,7 +1445,7 @@ fieldset[disabled] .form-control + .input-icon,
 .input-group-hg > .input-group-btn > .btn {
   height: 53px;
   padding: 10px 16px;
-  font-size: 26px;
+  font-size: 23px;
   line-height: 1.318;
   border-radius: 6px;
 }
@@ -1468,7 +1468,7 @@ select[multiple].input-group-hg > .input-group-btn > .btn {
 .input-group-lg > .input-group-btn > .btn {
   height: 45px;
   padding: 10px 15px;
-  font-size: 21px;
+  font-size: 19px;
   line-height: 1.235;
   border-radius: 6px;
 }
@@ -1491,7 +1491,7 @@ select[multiple].input-group-lg > .input-group-btn > .btn {
 .input-group-sm > .input-group-btn > .btn {
   height: 35px;
   padding: 6px 10px;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.462;
   border-radius: 6px;
 }
@@ -1511,7 +1511,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .input-group-addon {
   padding: 10px 12px;
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
   text-align: center;
   background-color: #bdc3c7;
@@ -1723,7 +1723,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   position: relative;
   -webkit-transition: color 0.25s linear;
   transition: color 0.25s linear;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.5;
 }
 .checkbox input,
@@ -1861,7 +1861,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   margin-top: 10px;
 }
 .navbar {
-  font-size: 19px;
+  font-size: 17px;
   min-height: 100px;
   margin-bottom: 27px;
   border: none;
@@ -1941,13 +1941,13 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   border-width: 0;
 }
 .navbar-brand {
-  font-size: 36px;
+  font-size: 32px;
   line-height: 1.042;
   font-weight: 700;
   padding: 37.5px 21px;
 }
 .navbar-brand > [class*="fui-"] {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.263;
   vertical-align: top;
 }
@@ -1969,7 +1969,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   color: #ab3326;
   content: "\e00c";
   font-family: "Flat-UI-Icons";
-  font-size: 26px;
+  font-size: 23px;
   font-style: normal;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
@@ -1996,7 +1996,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   margin: 0;
 }
 .navbar-nav > li > a {
-  font-size: 19px;
+  font-size: 17px;
   padding: 38.5px 21px;
   line-height: 23px;
   font-weight: 700;
@@ -2048,7 +2048,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 .navbar-input {
   height: 35px;
   padding: 5px 10px;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.4;
   border-radius: 6px;
 }
@@ -2092,7 +2092,7 @@ select[multiple].navbar-input {
 .navbar-form .btn {
   height: 35px;
   padding: 5px 10px;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.4;
   border-radius: 6px;
 }
@@ -2127,12 +2127,12 @@ select[multiple].navbar-form .btn {
   border-top-left-radius: 0;
 }
 .navbar-form .form-control {
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 5px;
   display: table-cell;
 }
 .navbar-form .form-group + .btn {
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 5px;
   margin-left: 4px;
 }
@@ -2172,7 +2172,7 @@ select[multiple].navbar-form .btn {
   background-color: transparent;
 }
 .navbar-text {
-  font-size: 19px;
+  font-size: 17px;
   line-height: 1.438;
   color: #ab3326;
   margin-top: 0;
@@ -2644,11 +2644,11 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   padding-bottom: 26px;
 }
 .navbar-lg .navbar-brand > [class*="fui-"] {
-  font-size: 28px;
+  font-size: 25px;
   line-height: 1;
 }
 .navbar-lg .navbar-nav > li > a {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
 }
 @media (min-width: 768px) {
@@ -2695,7 +2695,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   border-radius: 4px;
   background-color: #2c3e50;
   color: #ffffff;
-  font-size: 17px;
+  font-size: 15px;
   cursor: pointer;
   display: inline-block;
   margin-right: 5px;
@@ -2724,7 +2724,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   border: none;
   color: #ab3326;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   margin: 0px;
   padding: 0 0 0 5px;
   outline: none !important;
@@ -2763,7 +2763,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1;
   margin-bottom: 5px;
   padding: 7px 9px;
@@ -2796,7 +2796,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   border: 2px solid #bdc3c7;
   color: #ab3326;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.467;
   padding: 8px 12px;
   height: 42px;
@@ -2869,7 +2869,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
   right: 2px;
   line-height: 37px;
   vertical-align: middle;
-  font-size: 24px;
+  font-size: 22px;
   color: #edceca;
   background-color: #ffffff;
   padding: 0 12px 0 0;
@@ -2885,7 +2885,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
 }
 .twitter-typeahead .tt-suggestion p {
   padding: 6px 14px;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.429;
   margin: 0;
 }
@@ -2966,7 +2966,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
 }
 .ui-slider-value {
   float: right;
-  font-size: 15px;
+  font-size: 13px;
   margin-top: 12px;
 }
 .ui-slider-value.first {
@@ -3081,7 +3081,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
   background: transparent;
   border: none;
   border-right: 2px solid #f4e4e2;
-  font-size: 19px;
+  font-size: 17px;
   margin: 0 9px 0 0;
   padding: 12px 17px;
   border-radius: 6px 0 0 6px;
@@ -3168,7 +3168,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
   background: #ffffff;
   border: 5px solid #eed6d4;
   color: #ffffff;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 16px;
   margin: 7px 2px 6px;
   min-width: 0;
@@ -3196,7 +3196,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
 .pagination > .btn.previous,
 .pagination > .btn.next {
   margin-right: 8px;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.429;
   padding-left: 23px;
   padding-right: 23px;
@@ -3216,7 +3216,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
   margin-left: 4px;
 }
 .tooltip {
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.286;
 }
 .tooltip.in {
@@ -3521,7 +3521,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
 }
 .has-switch span {
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   float: left;
   height: 29px;
@@ -3613,7 +3613,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
   padding: 15px;
 }
 .share li {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
   padding-top: 11px;
 }
@@ -3650,7 +3650,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
   margin: 0 0 20px 20px;
 }
 .palette {
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.214;
   color: #ffffff;
   margin: 0;
@@ -3807,7 +3807,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
   background: #ab3326 url(../images/todo/todo.png) 92% center no-repeat;
   background-size: 20px 20px;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.214;
   margin-top: 2px;
   padding: 18px 42px 21px 25px;
@@ -4730,7 +4730,7 @@ nav {
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 .navbar-brand {
-  margin-top: -7px;
+  margin-top: -9px;
 }
 .content {
   padding: 20px 20px;
