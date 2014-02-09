@@ -9,6 +9,7 @@ Maar programmeren is ook: zelf iets maken en ontwerpen. Puzzelen. Honderd proble
 Programmeren is praten tegen een computer --- een programma schrijven.
 
 Maar programmeren is ook: zelf iets maken en ontwerpen. Puzzelen. Honderd problemen oplossen. Elke keer iets nieuws leren. Divers. Overal te gebruiken. **Overal nodig**.
+<!-- more -->
 
 <p><iframe width="420" height="315" src="//www.youtube.com/embed/dU1xS07N-FA"
   frameborder="0" allowfullscreen="allowfullscreen">  </iframe></p>

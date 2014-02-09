@@ -8,10 +8,11 @@ Bedankt voor de interesse gisteren! Wij kijken uit naar volgende week. Hier een 
 
 Hoi iedereen,
 
-Bedankt voor de interesse gisteren! Wij kijken uit naar volgende week. Hier een overzicht van de eerste les:
+Bedankt voor de interesse gisteren! Wij kijken uit naar volgende week. Hier een overzicht van de eerste les:<!-- more -->
 
 * This will become a table of contents (this text will be scraped).
 {:toc}
+
 
 ## Voor thuis
 * [Installeer](/installatie/) Ruby en Sublime Text.
