@@ -3,17 +3,20 @@
 
   {% include head.html %}
 
-  <body class="layout-reverse theme-base-08" data-spy="scroll" data-target=".scrollspy">
+  <body class="layout-reverse theme-base-08 scrollspy">
 
   {% include header.html %} 
 
     <div class="container content">
       <div class="row">
-        <div class="col-md-7 col-md-offset-1">
+        <div class="col-md-7">
           {{ content }}
         </div>
-        <div class="col-md-4">
-          <a href="#" class="back-to-top">Terug omhoog.</a>
+        <div class="col-md-5">
+          <div class="hidden-print page-map-sidebar">
+            <ul id="page-map" class="nav">
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -34,27 +37,6 @@
     <script src="/public/js/jquery.tagsinput.js"></script>
     <script src="/public/js/jquery.placeholder.js"></script>
 
-    <script>
-      jQuery(document).ready(function() {
-        var offset = 220;
-        var duration = 500;
-        jQuery(window).scroll(function() {
-          // 992 is @screen-md-min
-          if ($(window).width() > 992) {
-            if (jQuery(this).scrollTop() > offset) {
-                jQuery('.back-to-top').fadeIn(duration);
-            } else {
-                jQuery('.back-to-top').fadeOut(duration);
-            }
-          }
-        });
-        
-        jQuery('.back-to-top').click(function(event) {
-            event.preventDefault();
-            jQuery('html, body').animate({scrollTop: 0}, duration);
-            return false;
-        })
-      });
-  </script> 
+    <script src="/public/js/scrollspy.js"></script>
   </body>
 </html>
