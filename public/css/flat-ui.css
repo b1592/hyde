@@ -472,7 +472,7 @@ code {
   padding: 2px 6px;
   font-size: 85%;
   color: #81261d;
-  background-color: #f9ebea;
+  background-color: #f7ebe9;
   border-radius: 4px;
 }
 kbd {
@@ -489,7 +489,7 @@ pre {
   font-size: 13px;
   line-height: 1.5;
   color: inherit;
-  background-color: #f9ebea;
+  background-color: #f7ebe9;
   border: 1px solid #f5e6e5;
   border-radius: 6px;
   white-space: pre;
@@ -4819,7 +4819,7 @@ pre code {
   color: #414544;
 }
 #page-map li.active a {
-  background-color: #f9ebea;
+  background-color: #f0d9d7;
 }
 #page-map {
   margin-top: 0;
