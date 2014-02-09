@@ -41,11 +41,11 @@ $('body').scrollspy({ target: '.page-map-sidebar' });
 }(window.jQuery)
 
 jQuery(document).ready(function() {
-  var offset = 220;
+  var offset = 250;
   var duration = 500;
   jQuery(window).scroll(function() {
-    // 768 is @screen-sm-min
-    if ($(window).width() > 768) {
+    // 992 is @screen-md-min
+    if ($(window).width() > 992) {
       if (jQuery(this).scrollTop() > offset) {
           jQuery('.page-map-sidebar').fadeIn(duration);
       } else {
