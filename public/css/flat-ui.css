@@ -466,11 +466,11 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: "Inconsolata", Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 code {
   padding: 2px 6px;
-  font-size: 85%;
+  font-size: 100%;
   color: #81261d;
   background-color: #f7ebe9;
   border-radius: 4px;
@@ -486,7 +486,7 @@ kbd {
 pre {
   padding: 7px;
   margin-left: 10px;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 1.5;
   color: inherit;
   background-color: #f7ebe9;
@@ -1941,10 +1941,10 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   border-width: 0;
 }
 .navbar-brand {
-  font-size: 32px;
+  font-size: 40px;
   line-height: 1.042;
   font-weight: 700;
-  /*padding: 37.5px 21px;*/
+  padding: 37.5px 21px;
 }
 .navbar-brand > [class*="fui-"] {
   font-size: 20px;
@@ -1996,7 +1996,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   margin: 0;
 }
 .navbar-nav > li > a {
-  font-size: 17px;
+  font-size: 21px;
   padding: 38.5px 21px;
   line-height: 23px;
   font-weight: 700;
@@ -4224,7 +4224,7 @@ body.vjs-full-window {
 }
 .vjs-fullscreen-control {
   background-image: url(../images/video/fullscreen.png);
-  background-position: center -46.99999999px;
+  background-position: center -47px;
   background-size: 15px 64px;
   cursor: pointer !important;
   position: absolute;
@@ -4727,17 +4727,17 @@ h3 {
   text-decoration: underline;
 }
 nav {
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: "Inconsolata", Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 .navbar-brand {
-  margin-top: -6px;
+  margin-top: -11px;
 }
 .content {
   padding: 20px 20px 20px 20px;
 }
 footer #logo {
   margin-top: 32px;
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: "Inconsolata", Monaco, Menlo, Consolas, "Courier New", monospace;
   text-decoration: none;
   font-size: 24px;
 }
@@ -4786,11 +4786,10 @@ footer #logo {
 /* CODE */
 code,
 pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: "Inconsolata", Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 code {
   padding: .25em .5em;
-  font-size: 85%;
   background-color: #f9f9f9;
   border-radius: 3px;
 }
@@ -4798,7 +4797,6 @@ pre {
   display: block;
   margin-bottom: 14px;
   padding: 15px 20px;
-  font-size: 16px;
   line-height: 1.4;
   white-space: pre;
   white-space: pre-wrap;
@@ -4814,8 +4812,8 @@ pre code {
 }
 #page-map li a {
   font-weight: normal;
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-  font-size: 12px;
+  font-family: "Inconsolata", Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-size: 14px;
   color: #414544;
 }
 #page-map li.active a {
