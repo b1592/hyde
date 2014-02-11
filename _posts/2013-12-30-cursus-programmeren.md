@@ -4,6 +4,7 @@ title: Cursus programmeren
 excerpt: "Programmeren is praten tegen een computer --- een programma schrijven.
 
 Maar programmeren is ook: zelf iets maken en ontwerpen. Puzzelen. Honderd problemen oplossen. Elke keer iets nieuws leren. Divers. Overal te gebruiken. Overal nodig."
+identifier: "cursus-programmeren"
 ---
 
 Programmeren is praten tegen een computer --- een programma schrijven.

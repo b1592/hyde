@@ -1996,7 +1996,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   margin: 0;
 }
 .navbar-nav > li > a {
-  font-size: 21px;
+  font-size: 23px;
   padding: 38.5px 21px;
   line-height: 23px;
   font-weight: 700;
@@ -3995,7 +3995,7 @@ body.vjs-full-window {
 }
 .vjs-control-bar {
   position: absolute;
-  bottom: -47px;
+  bottom: -46.99999999px;
   left: 0;
   right: 0;
   margin: 0;
@@ -4817,6 +4817,9 @@ pre code {
   color: #414544;
 }
 #page-map li.active a {
+  background-color: #f0d9d7;
+}
+#page-map li a:hover {
   background-color: #f0d9d7;
 }
 #page-map {

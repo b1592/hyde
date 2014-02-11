@@ -7,9 +7,6 @@ title: Hoofdstuk 1
 
 We maken kennis met Ruby en Sublime Text. We praten tegen de computer en laten de computer terugpraten.
 
-* This will become a table of contents (this text will be scraped).
-{:toc}
-
 ## De bestanden
 
 In de map Hoofdstuk 1 vind je de volgende bestanden:

@@ -4,6 +4,7 @@ title: Overzicht les 1
 excerpt: "Hoi iedereen,
 
 Bedankt voor de interesse gisteren! Wij kijken uit naar volgende week. Hier een overzicht van de eerste les:"
+identifier: "overzicht-les-1"
 ---
 
 Hoi iedereen,

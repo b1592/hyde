@@ -3,10 +3,7 @@ layout: default
 title: Windows Command Line
 ---
 
-# Windows Command Line
-
-* This will become a table of contents (this text will be scraped).
-{:toc} 
+# Windows Command Line 
 
 Klik op start, typ dan `cmd` en druk op Enter. Je ziet een zwart scherm. Hier kun je de computer commando's geven.
 

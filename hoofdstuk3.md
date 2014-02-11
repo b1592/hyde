@@ -9,11 +9,6 @@ Al duizenden jaren proberen mensen elkaar berichten te versturen die niet door a
 
 Een van de oudste manieren zou door Julius Caesar zelf zijn gebruikt en is redelijk eenvoudig. Hij schoof elke letter in een bericht een vast aantal plaatsen door in het alfabet. Dus hij maakte bijvoorbeeld van een 'a' een 'd', van een 'b' een 'e' etc. Met deze methode gaan we in deze opdracht aan de slag. Zie ook: [Caesar Cipher op wikipedia](http://en.wikipedia.org/wiki/Caesar_cipher).
 
-In dit hoofdstuk behandelen we:
-
-* This will become a table of contents (this text will be scraped).
-{:toc}
-
 ##Bestanden
 
 In deze map vind je de volgende bestanden:

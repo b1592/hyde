@@ -7,9 +7,6 @@ title: Installatie
 
 We installeren twee dingen: de ruby interpreter en een text editor. 
 
-* This will become a table of contents (this text will be scraped).
-{:toc}
-
 ## Ruby interpreter
 ### Windows
 Ga naar [http://rubyinstaller.org/downloads/](http://rubyinstaller.org/downloads/).
