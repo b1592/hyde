@@ -17,6 +17,10 @@ Vink de volgende opties aan voor het installeren:
 * `Add Ruby executables to your PATH`
 * `Associate .rb and .rbw files with this Ruby installation`
 
+Open de [command line](/command_line) en typ `ruby -v`. Als het goed is zie je nu:
+
+    ruby 1.9.3p484    
+
 ### Mac/Linux
 Ruby is al geïnstalleerd. Open een terminal en typ `ruby -v`. Hiermee vraag je om de versie. Alles van `1.8.7` tot `2.1.0` is OK.
 
